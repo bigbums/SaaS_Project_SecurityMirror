@@ -1,8 +1,0 @@
-{% extends "core/base.html" %}
-{% block title %}Signup Limit{% endblock %}
-
-{% block content %}
-  <h2>Signup Closed for {{ tier.name }} Tier</h2>
-  <p>Sorry, the {{ tier.name }} tier has reached its maximum of {{ tier.max_users }} users.</p>
-  <p>Please choose another plan or contact support.</p>
-{% endblock %}

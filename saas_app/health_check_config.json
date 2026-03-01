@@ -1,7 +1,0 @@
-{
-  "RetentionDays": 45,
-  "ScheduledHour": 9,
-  "LogFileName": "setup_log.txt",
-  "IconsFolder": "icons",
-  "ReportsFolder": "reports"
-}
