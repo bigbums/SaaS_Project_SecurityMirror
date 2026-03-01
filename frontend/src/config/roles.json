@@ -1,0 +1,55 @@
+{  
+  
+  "PlatformGlobalAdmin": {
+    "invoices": ["view", "create", "edit", "delete", "markPaid", "resend", "download"],
+    "payments": ["view", "create", "edit", "delete", "download", "markReceived"],
+    "tenants": ["view", "create", "edit", "delete"],
+    "reports": ["view", "export"],
+    "settings": ["managePlatform", "manageStaff", "manageCompliance"]
+  },
+  "PlatformAdmin": {
+    "invoices": ["view"],   
+    "payments": [],         
+    "tenants": ["view", "create", "edit", "delete"],
+    "users": ["view", "create", "edit", "delete"],
+    "tiers": ["view"],
+    "reports": ["view", "export"],
+    "settings": ["managePlatform", "manageStaff"]
+  },
+  "PlatformStaff": {
+    "invoices": ["view", "resend", "download"],
+    "payments": [],         
+    "tenants": ["view"],
+    "reports": ["view"]
+  },
+  "TenantAdmin": {
+    "invoices": ["view", "create", "edit", "delete", "markPaid", "resend", "download"],
+    "payments": ["view", "create", "edit", "delete", "download", "markReceived"],
+    "customers": ["view", "create", "edit", "delete"],
+    "projects": ["view", "create", "edit", "close"],
+    "reports": ["view", "export"],
+    "settings": ["manageTenant", "manageStaff"]
+  },
+  "TenantManager": {
+    "invoices": ["view", "create", "markPaid", "resend", "download"],
+    "payments": ["view", "create", "markReceived", "download"],
+    "customers": ["view", "create", "edit"],
+    "projects": ["view", "create", "edit"],
+    "reports": ["view"]
+  },
+  "TenantStaff": {
+    "invoices": ["view", "create", "download"],
+    "payments": ["view", "create", "download"],
+    "customers": ["view"],
+    "projects": ["view"]
+  },
+  "TenantReadOnly": {
+    "invoices": ["view", "download"],
+    "payments": ["view", "download"],
+    "customers": ["view"],
+    "projects": ["view"],
+    "reports": ["view"]
+  }
+}
+
+

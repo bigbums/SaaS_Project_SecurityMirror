@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: saas_app
+Version: 0.1.0
+Summary: SaaS application project
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: django>=5.0
+Requires-Dist: celery>=5.3
+Requires-Dist: djangorestframework>=3.15

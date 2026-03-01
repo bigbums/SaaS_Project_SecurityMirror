@@ -1,0 +1,748 @@
+[2026-01-29 14:12:51] ✅ Task ran successfully at 2026-01-29 14:05:53 (within 24 hours).
+[2026-01-29 14:13:18] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:13:18] ✅ Conversion task ran at 2026-01-29 14:05:53 (within 24 hours).
+[2026-01-29 14:13:18] ✅ export_log.txt updated at 2026-01-29 14:05:53 (within 24 hours).
+[2026-01-29 14:13:18] ✅ export_log_utf8.txt updated at 2026-01-29 14:05:53 (within 24 hours).
+[2026-01-29 14:26:56] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:26:56] ✅ Conversion task ran at 2026-01-29 14:26:56 (within 24 hours).
+[2026-01-29 14:26:56] ✅ export_log.txt updated at 2026-01-29 14:26:56 (within 24 hours).
+[2026-01-29 14:26:56] ✅ export_log_utf8.txt updated at 2026-01-29 14:26:56 (within 24 hours).
+[2026-01-29 14:28:50] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:28:50] ✅ Conversion task ran at 2026-01-29 14:28:50 (within 24 hours).
+[2026-01-29 14:28:50] ✅ export_log.txt updated at 2026-01-29 14:28:50 (within 24 hours).
+[2026-01-29 14:28:50] ✅ export_log_utf8.txt updated at 2026-01-29 14:28:50 (within 24 hours).
+[2026-01-29 14:32:54] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:32:54] ✅ Conversion task ran at 2026-01-29 14:32:54 (within 24 hours).
+[2026-01-29 14:32:54] ✅ export_log.txt updated at 2026-01-29 14:32:54 (within 24 hours).
+[2026-01-29 14:32:54] ✅ export_log_utf8.txt updated at 2026-01-29 14:32:54 (within 24 hours).
+[2026-01-29 14:36:18] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:36:18] ✅ Conversion task ran at 2026-01-29 14:36:18 (within 24 hours).
+[2026-01-29 14:36:18] ✅ export_log.txt updated at 2026-01-29 14:36:18 (within 24 hours).
+[2026-01-29 14:36:18] ✅ export_log_utf8.txt updated at 2026-01-29 14:36:18 (within 24 hours).
+[2026-01-29 14:37:52] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:37:52] ✅ Conversion task ran at 2026-01-29 14:37:52 (within 24 hours).
+[2026-01-29 14:37:52] ✅ export_log.txt updated at 2026-01-29 14:37:52 (within 24 hours).
+[2026-01-29 14:37:52] ✅ export_log_utf8.txt updated at 2026-01-29 14:37:52 (within 24 hours).
+[2026-01-29 14:41:33] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:41:33] ✅ Conversion task ran at 2026-01-29 14:41:33 (within 24 hours).
+[2026-01-29 14:41:33] ✅ export_log.txt updated at 2026-01-29 14:41:33 (within 24 hours).
+[2026-01-29 14:41:33] ✅ export_log_utf8.txt updated at 2026-01-29 14:41:33 (within 24 hours).
+[2026-01-29 14:43:32] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:43:32] ✅ Conversion task ran at 2026-01-29 14:43:31 (within 24 hours).
+[2026-01-29 14:43:32] ✅ export_log.txt updated at 2026-01-29 14:43:31 (within 24 hours).
+[2026-01-29 14:43:32] ✅ export_log_utf8.txt updated at 2026-01-29 14:43:31 (within 24 hours).
+[2026-01-29 14:45:08] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:45:08] ✅ Conversion task ran at 2026-01-29 14:45:08 (within 24 hours).
+[2026-01-29 14:45:08] ✅ export_log.txt updated at 2026-01-29 14:45:08 (within 24 hours).
+[2026-01-29 14:45:08] ✅ export_log_utf8.txt updated at 2026-01-29 14:45:08 (within 24 hours).
+[2026-01-29 14:52:22] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 14:52:22] ✅ Conversion task ran at 2026-01-29 14:52:22 (within 24 hours).
+[2026-01-29 14:52:22] ✅ export_log.txt updated at 2026-01-29 14:52:22 (within 24 hours).
+[2026-01-29 14:52:22] ✅ export_log_utf8.txt updated at 2026-01-29 14:52:22 (within 24 hours).
+[2026-01-29 15:06:52] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 15:06:52] ✅ Conversion task ran at 2026-01-29 15:06:52 (within 24 hours).
+[2026-01-29 15:06:52] ✅ export_log.txt updated at 2026-01-29 15:06:52 (within 24 hours).
+[2026-01-29 15:06:52] ✅ export_log_utf8.txt updated at 2026-01-29 15:06:52 (within 24 hours).
+[2026-01-29 16:06:21] ✅ No error_log.txt found. No errors recorded.
+[2026-01-29 16:06:21] ✅ Conversion task ran at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-29 16:06:21] ✅ export_log.txt updated at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-29 16:06:21] ✅ export_log_utf8.txt updated at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-30 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:03:56] ✅ Conversion task ran at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-30 01:03:56] ✅ export_log.txt updated at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-30 01:03:56] ✅ export_log_utf8.txt updated at 2026-01-29 16:06:21 (within 24 hours).
+[2026-01-30 01:08:45] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:08:45] ✅ Conversion task ran at 2026-01-30 01:08:45 (within 24 hours).
+[2026-01-30 01:08:45] ✅ export_log.txt updated at 2026-01-30 01:08:45 (within 24 hours).
+[2026-01-30 01:08:45] ✅ export_log_utf8.txt updated at 2026-01-30 01:08:45 (within 24 hours).
+[2026-01-30 01:15:32] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:15:32] ✅ Conversion task ran at 2026-01-30 01:15:32 (within 24 hours).
+[2026-01-30 01:15:32] ✅ export_log.txt updated at 2026-01-30 01:15:32 (within 24 hours).
+[2026-01-30 01:15:32] ✅ export_log_utf8.txt updated at 2026-01-30 01:15:32 (within 24 hours).
+[2026-01-30 01:19:55] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:19:55] ✅ Conversion task ran at 2026-01-30 01:19:55 (within 24 hours).
+[2026-01-30 01:19:55] ✅ export_log.txt updated at 2026-01-30 01:19:55 (within 24 hours).
+[2026-01-30 01:19:55] ✅ export_log_utf8.txt updated at 2026-01-30 01:19:55 (within 24 hours).
+[2026-01-30 01:54:18] Starting comprehensive log check...
+[2026-01-30 01:54:18] ❌ Error found: ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:54:18] ⚠️ Log issue: ⚠️ monthly_revenue.pdf is 35.3 hours old (stale).
+[2026-01-30 01:54:18] ⚠️ Log issue: ⚠️ monthly_revenue.png is 35.3 hours old (stale).
+[2026-01-30 01:54:18] ⚠️ Log issue: ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 35.3 hours old (stale).
+[2026-01-30 01:54:18] ⚠️ Log issue: ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 35.3 hours old (stale).
+[2026-01-30 01:54:18] Comprehensive check completed with issues.
+[2026-01-30 01:54:42] Starting comprehensive log check...
+[2026-01-30 01:54:42] ❌ Error found: ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:54:42] ⚠️ Log issue: ⚠️ monthly_revenue.pdf is 35.4 hours old (stale).
+[2026-01-30 01:54:42] ⚠️ Log issue: ⚠️ monthly_revenue.png is 35.4 hours old (stale).
+[2026-01-30 01:54:42] ⚠️ Log issue: ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 35.3 hours old (stale).
+[2026-01-30 01:54:42] ⚠️ Log issue: ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 35.3 hours old (stale).
+[2026-01-30 01:54:42] Comprehensive check completed with issues.
+[2026-01-30 01:55:57] Starting comprehensive log check...
+[2026-01-30 01:55:57] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 01:55:57] ⚠️ monthly_revenue.pdf is 35.4 hours old (stale).
+[2026-01-30 01:55:57] ⚠️ monthly_revenue.png is 35.4 hours old (stale).
+[2026-01-30 01:55:57] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 35.3 hours old (stale).
+[2026-01-30 01:55:57] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 35.3 hours old (stale).
+[2026-01-30 01:55:57] Comprehensive check completed with issues.
+[2026-01-30 02:03:51] Starting comprehensive log check...
+[2026-01-30 02:03:51] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 08:00:04] Starting comprehensive log check...
+[2026-01-30 08:00:04] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 09:00:02] Starting comprehensive log check...
+[2026-01-30 09:00:02] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 09:00:02] ⚠️ monthly_revenue.pdf is 42.4 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue.png is 42.4 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 42.4 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 42.4 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 29.5 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 29.3 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 29.1 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 29.1 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 29.1 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 29.1 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 28.8 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 28.7 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 28.7 hours old (stale).
+[2026-01-30 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 28.7 hours old (stale).
+[2026-01-30 09:00:02] Comprehensive check completed with issues.
+[2026-01-30 12:45:15] Starting comprehensive log check...
+[2026-01-30 12:45:15] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 12:58:22] Starting comprehensive log check...
+[2026-01-30 12:58:22] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 13:01:53] Starting comprehensive log check...
+[2026-01-30 13:01:53] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 13:38:40] Starting comprehensive log check...
+[2026-01-30 13:38:40] ✅ No error_log.txt found. No errors recorded.
+[2026-01-30 14:07:53] Starting comprehensive log check...
+[2026-01-30 14:07:53] ✅ No error_log.txt found. No errors recorded.
+[2026-01-31 01:03:56] Starting comprehensive log check...
+[2026-01-31 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-01-31 01:03:56] ⚠️ monthly_revenue.pdf is 58.5 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue.png is 58.5 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 58.4 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 58.4 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 45.5 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 45.3 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 45.2 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 45.2 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 45.2 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 45.2 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 44.9 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 44.8 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 44.8 hours old (stale).
+[2026-01-31 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 44.8 hours old (stale).
+[2026-01-31 01:03:56] Comprehensive check completed with issues.
+[2026-01-31 08:14:47] Starting comprehensive log check...
+[2026-01-31 08:14:47] ✅ No error_log.txt found. No errors recorded.
+[2026-01-31 09:00:02] Starting comprehensive log check...
+[2026-01-31 09:00:02] ✅ No error_log.txt found. No errors recorded.
+[2026-01-31 09:00:02] ⚠️ monthly_revenue.pdf is 66.4 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue.png is 66.4 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 66.4 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 66.4 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 53.5 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 53.3 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 53.1 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 53.1 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 53.1 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 53.1 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 52.8 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 52.7 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 52.7 hours old (stale).
+[2026-01-31 09:00:02] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 52.7 hours old (stale).
+[2026-01-31 09:00:02] Comprehensive check completed with issues.
+[2026-02-01 01:03:56] Starting comprehensive log check...
+[2026-02-01 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-01 01:03:56] ⚠️ monthly_revenue.pdf is 82.5 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue.png is 82.5 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 82.4 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 82.4 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 69.5 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 69.3 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 69.2 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 69.2 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 69.2 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 69.2 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 68.9 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 68.8 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 68.8 hours old (stale).
+[2026-02-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 68.8 hours old (stale).
+[2026-02-01 01:03:56] Comprehensive check completed with issues.
+[2026-02-01 13:12:28] Starting comprehensive log check...
+[2026-02-01 13:12:28] ✅ No error_log.txt found. No errors recorded.
+[2026-02-02 01:03:56] Starting comprehensive log check...
+[2026-02-02 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-02 01:03:56] ⚠️ monthly_revenue.pdf is 106.5 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue.png is 106.5 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 106.4 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 106.4 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 93.5 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 93.3 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 93.2 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 93.2 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 93.2 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 93.2 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 92.9 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 92.8 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 92.8 hours old (stale).
+[2026-02-02 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 92.8 hours old (stale).
+[2026-02-02 01:03:56] Comprehensive check completed with issues.
+[2026-02-02 09:14:01] Starting comprehensive log check...
+[2026-02-02 09:14:01] ✅ No error_log.txt found. No errors recorded.
+[2026-02-03 13:38:06] Starting comprehensive log check...
+[2026-02-03 13:38:06] ✅ No error_log.txt found. No errors recorded.
+[2026-02-04 01:03:56] Starting comprehensive log check...
+[2026-02-04 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-04 01:03:56] ⚠️ monthly_revenue.pdf is 154.5 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue.png is 154.5 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 154.4 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 154.4 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 141.5 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 141.3 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 141.2 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 141.2 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 141.2 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 141.2 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 140.9 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 140.8 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 140.8 hours old (stale).
+[2026-02-04 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 140.8 hours old (stale).
+[2026-02-04 01:03:56] Comprehensive check completed with issues.
+[2026-02-04 12:39:34] Starting comprehensive log check...
+[2026-02-04 12:39:34] ✅ No error_log.txt found. No errors recorded.
+[2026-02-05 01:03:56] Starting comprehensive log check...
+[2026-02-05 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-05 01:03:56] ⚠️ monthly_revenue.pdf is 178.5 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue.png is 178.5 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 178.4 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 178.4 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 165.5 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 165.3 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 165.2 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 165.2 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 165.2 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 165.2 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 164.9 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 164.8 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 164.8 hours old (stale).
+[2026-02-05 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 164.8 hours old (stale).
+[2026-02-05 01:03:56] Comprehensive check completed with issues.
+[2026-02-05 08:00:04] Starting comprehensive log check...
+[2026-02-05 08:00:04] ✅ No error_log.txt found. No errors recorded.
+[2026-02-07 21:30:50] Starting comprehensive log check...
+[2026-02-07 21:30:50] ✅ No error_log.txt found. No errors recorded.
+[2026-02-08 01:03:55] Starting comprehensive log check...
+[2026-02-08 01:03:55] ✅ No error_log.txt found. No errors recorded.
+[2026-02-08 01:03:55] ⚠️ monthly_revenue.pdf is 250.5 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue.png is 250.5 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 250.4 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 250.4 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 237.5 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 237.3 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 237.2 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 237.2 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 237.2 hours old (stale).
+[2026-02-08 01:03:55] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 237.2 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 236.9 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 236.8 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 236.8 hours old (stale).
+[2026-02-08 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 236.8 hours old (stale).
+[2026-02-08 01:03:56] Comprehensive check completed with issues.
+[2026-02-08 11:21:10] Starting comprehensive log check...
+[2026-02-08 11:21:10] ✅ No error_log.txt found. No errors recorded.
+[2026-02-09 01:03:56] Starting comprehensive log check...
+[2026-02-09 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-09 01:03:56] ⚠️ monthly_revenue.pdf is 274.5 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue.png is 274.5 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 274.4 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 274.4 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 261.5 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 261.3 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 261.2 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 261.2 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 261.2 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 261.2 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 260.9 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 260.8 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 260.8 hours old (stale).
+[2026-02-09 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 260.8 hours old (stale).
+[2026-02-09 01:03:56] Comprehensive check completed with issues.
+[2026-02-09 13:23:25] Starting comprehensive log check...
+[2026-02-09 13:23:25] ✅ No error_log.txt found. No errors recorded.
+[2026-02-10 13:58:09] Starting comprehensive log check...
+[2026-02-10 13:58:09] ✅ No error_log.txt found. No errors recorded.
+[2026-02-11 01:03:56] Starting comprehensive log check...
+[2026-02-11 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-11 01:03:56] ⚠️ monthly_revenue.pdf is 322.5 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue.png is 322.5 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 322.4 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 322.4 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 309.5 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 309.3 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 309.2 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 309.2 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 309.2 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 309.2 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 308.9 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 308.8 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 308.8 hours old (stale).
+[2026-02-11 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 308.8 hours old (stale).
+[2026-02-11 01:03:56] Comprehensive check completed with issues.
+[2026-02-11 13:48:04] Starting comprehensive log check...
+[2026-02-11 13:48:04] ✅ No error_log.txt found. No errors recorded.
+[2026-02-12 12:08:40] Starting comprehensive log check...
+[2026-02-12 12:08:40] ✅ No error_log.txt found. No errors recorded.
+[2026-02-13 01:03:57] Starting comprehensive log check...
+[2026-02-13 01:03:57] ✅ No error_log.txt found. No errors recorded.
+[2026-02-13 01:03:57] ⚠️ monthly_revenue.pdf is 370.5 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue.png is 370.5 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 370.4 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 370.4 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 357.5 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 357.3 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 357.2 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 357.2 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 357.2 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 357.2 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 356.9 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 356.8 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 356.8 hours old (stale).
+[2026-02-13 01:03:57] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 356.8 hours old (stale).
+[2026-02-13 01:03:57] Comprehensive check completed with issues.
+[2026-02-13 11:33:37] Starting comprehensive log check...
+[2026-02-13 11:33:37] ✅ No error_log.txt found. No errors recorded.
+[2026-02-14 19:49:39] Starting comprehensive log check...
+[2026-02-14 19:49:39] ✅ No error_log.txt found. No errors recorded.
+[2026-02-15 01:03:56] Starting comprehensive log check...
+[2026-02-15 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-15 01:03:56] ⚠️ monthly_revenue.pdf is 418.5 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue.png is 418.5 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 418.4 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 418.4 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 405.5 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 405.3 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 405.2 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 405.2 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 405.2 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 405.2 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 404.9 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 404.8 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 404.8 hours old (stale).
+[2026-02-15 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 404.8 hours old (stale).
+[2026-02-15 01:03:56] Comprehensive check completed with issues.
+[2026-02-15 13:13:34] Starting comprehensive log check...
+[2026-02-15 13:13:34] ✅ No error_log.txt found. No errors recorded.
+[2026-02-16 17:39:04] Starting comprehensive log check...
+[2026-02-16 17:39:04] ✅ No error_log.txt found. No errors recorded.
+[2026-02-17 01:03:56] Starting comprehensive log check...
+[2026-02-17 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-17 01:03:56] ⚠️ monthly_revenue.pdf is 466.5 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue.png is 466.5 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 466.4 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 466.4 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 453.5 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 453.3 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 453.2 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 453.2 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 453.2 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 453.2 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 452.9 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 452.8 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 452.8 hours old (stale).
+[2026-02-17 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 452.8 hours old (stale).
+[2026-02-17 01:03:56] Comprehensive check completed with issues.
+[2026-02-17 21:53:06] Starting comprehensive log check...
+[2026-02-17 21:53:06] ✅ No error_log.txt found. No errors recorded.
+[2026-02-18 01:03:56] Starting comprehensive log check...
+[2026-02-18 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-18 01:03:56] ⚠️ monthly_revenue.pdf is 490.5 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue.png is 490.5 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 490.4 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 490.4 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 477.5 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 477.3 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 477.2 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 477.2 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 477.2 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 477.2 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 476.9 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 476.8 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 476.8 hours old (stale).
+[2026-02-18 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 476.8 hours old (stale).
+[2026-02-18 01:03:56] Comprehensive check completed with issues.
+[2026-02-18 12:39:49] Starting comprehensive log check...
+[2026-02-18 12:39:49] ✅ No error_log.txt found. No errors recorded.
+[2026-02-19 01:03:56] Starting comprehensive log check...
+[2026-02-19 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-19 01:03:56] ⚠️ monthly_revenue.pdf is 514.5 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue.png is 514.5 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 514.4 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 514.4 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 501.5 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 501.3 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 501.2 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 501.2 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 501.2 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 501.2 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 500.9 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 500.8 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 500.8 hours old (stale).
+[2026-02-19 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 500.8 hours old (stale).
+[2026-02-19 01:03:56] Comprehensive check completed with issues.
+[2026-02-19 12:46:28] Starting comprehensive log check...
+[2026-02-19 12:46:28] ✅ No error_log.txt found. No errors recorded.
+[2026-02-21 10:47:04] Starting comprehensive log check...
+[2026-02-21 10:47:04] ✅ No error_log.txt found. No errors recorded.
+[2026-02-22 01:03:56] Starting comprehensive log check...
+[2026-02-22 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-22 01:03:56] ⚠️ monthly_revenue.pdf is 586.5 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue.png is 586.5 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 586.4 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 586.4 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 573.5 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 573.3 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 573.2 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 573.2 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 573.2 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 573.2 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 572.9 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 572.8 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 572.8 hours old (stale).
+[2026-02-22 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 572.8 hours old (stale).
+[2026-02-22 01:03:56] Comprehensive check completed with issues.
+[2026-02-22 12:01:37] Starting comprehensive log check...
+[2026-02-22 12:01:37] ✅ No error_log.txt found. No errors recorded.
+[2026-02-23 01:03:56] Starting comprehensive log check...
+[2026-02-23 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-23 01:03:56] ⚠️ monthly_revenue.pdf is 610.5 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue.png is 610.5 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 610.4 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 610.4 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 597.5 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 597.3 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 597.2 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 597.2 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 597.2 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 597.2 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 596.9 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 596.8 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 596.8 hours old (stale).
+[2026-02-23 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 596.8 hours old (stale).
+[2026-02-23 01:03:56] Comprehensive check completed with issues.
+[2026-02-23 11:27:13] Starting comprehensive log check...
+[2026-02-23 11:27:13] ✅ No error_log.txt found. No errors recorded.
+[2026-02-24 01:03:56] Starting comprehensive log check...
+[2026-02-24 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-24 01:03:56] ⚠️ monthly_revenue.pdf is 634.5 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue.png is 634.5 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 634.4 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 634.4 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 621.5 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 621.3 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 621.2 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 621.2 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 621.2 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 621.2 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 620.9 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 620.8 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 620.8 hours old (stale).
+[2026-02-24 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 620.8 hours old (stale).
+[2026-02-24 01:03:56] Comprehensive check completed with issues.
+[2026-02-24 13:21:56] Starting comprehensive log check...
+[2026-02-24 13:21:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-25 01:03:56] Starting comprehensive log check...
+[2026-02-25 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-25 01:03:56] ⚠️ monthly_revenue.pdf is 658.5 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue.png is 658.5 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 658.4 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 658.4 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 645.5 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 645.3 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 645.2 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 645.2 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 645.2 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 645.2 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 644.9 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 644.8 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 644.8 hours old (stale).
+[2026-02-25 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 644.8 hours old (stale).
+[2026-02-25 01:03:56] Comprehensive check completed with issues.
+[2026-02-25 12:53:16] Starting comprehensive log check...
+[2026-02-25 12:53:16] ✅ No error_log.txt found. No errors recorded.
+[2026-02-26 01:03:56] Starting comprehensive log check...
+[2026-02-26 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-26 01:03:56] ⚠️ monthly_revenue.pdf is 682.5 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue.png is 682.5 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 682.4 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 682.4 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 669.5 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 669.3 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 669.2 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 669.2 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 669.2 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 669.2 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 668.9 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 668.8 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 668.8 hours old (stale).
+[2026-02-26 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 668.8 hours old (stale).
+[2026-02-26 01:03:56] Comprehensive check completed with issues.
+[2026-02-26 11:13:04] Starting comprehensive log check...
+[2026-02-26 11:13:04] ✅ No error_log.txt found. No errors recorded.
+[2026-02-27 01:03:56] Starting comprehensive log check...
+[2026-02-27 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-02-27 01:03:56] ⚠️ monthly_revenue.pdf is 706.5 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue.png is 706.5 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 706.4 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 706.4 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 693.5 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 693.3 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 693.2 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 693.2 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 693.2 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 693.2 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 692.9 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 692.8 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 692.8 hours old (stale).
+[2026-02-27 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 692.8 hours old (stale).
+[2026-02-27 01:03:56] Comprehensive check completed with issues.
+[2026-02-27 12:51:46] Starting comprehensive log check...
+[2026-02-27 12:51:46] ✅ No error_log.txt found. No errors recorded.
+[2026-02-28 14:01:58] Starting comprehensive log check...
+[2026-02-28 14:01:58] ✅ No error_log.txt found. No errors recorded.
+[2026-03-01 01:03:56] Starting comprehensive log check...
+[2026-03-01 01:03:56] ✅ No error_log.txt found. No errors recorded.
+[2026-03-01 01:03:56] ⚠️ monthly_revenue.pdf is 754.5 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue.png is 754.5 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.pdf is 754.4 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-28_14-38-35.png is 754.4 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-32-12.pdf is 741.5 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-44-45.png is 741.3 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.pdf is 741.2 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-27.png is 741.2 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.pdf is 741.2 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_03-52-39.png is 741.2 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-10-54.png is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-05.png is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-11-19.png is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-28.png is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-39.png is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-12-53.pdf is 740.9 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.pdf is 740.8 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-40.png is 740.8 hours old (stale).
+[2026-03-01 01:03:56] ⚠️ monthly_revenue_2026-01-29_04-17-53.pdf is 740.8 hours old (stale).
+[2026-03-01 01:03:56] Comprehensive check completed with issues.

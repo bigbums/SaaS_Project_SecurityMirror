@@ -1,0 +1,116 @@
+[
+  {
+    "model": "core.customuser",
+    "pk": 1,
+    "fields": {
+      "email": "admin@example.com",
+      "password": "pbkdf2_sha256$260000$abc123$hashed_admin123_here",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "first_name": "Admin",
+      "last_name": "User"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 2,
+    "fields": {
+      "email": "testuser@example.com",
+      "password": "pbkdf2_sha256$260000$xyz456$hashed_test123_here",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "first_name": "Test",
+      "last_name": "User"
+    }
+  },
+  {
+    "model": "core.tenant",
+    "pk": 1,
+    "fields": {
+      "name": "Demo Tenant",
+      "email": "tenant@example.com",
+      "tier": "pro",
+      "storage_type": "s3",
+      "status": "active",
+      "created_at": "2026-01-28T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.tenantuser",
+    "pk": 1,
+    "fields": {
+      "tenant": 1,
+      "user": 2,
+      "role": "owner"
+    }
+  },
+  {
+    "model": "core.smeprofile",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "name": "Test SME",
+      "type": "service",
+      "subscription_plan": "pro",
+      "address": "123 Example Street",
+      "phone": "+2348000000000",
+      "email": "sme@example.com",
+      "created_at": "2026-01-28T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 1,
+    "fields": {
+      "sme_profile": 1,
+      "name": "Demo Product",
+      "price": "100.00",
+      "stock": 50
+    }
+  },
+  {
+    "model": "core.service",
+    "pk": 1,
+    "fields": {
+      "sme_profile": 1,
+      "name": "Demo Service",
+      "description": "Basic consulting package",
+      "price": "250.00"
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 1,
+    "fields": {
+      "sme_profile": 1,
+      "user": 2,
+      "created_at": "2026-01-28T12:30:00Z",
+      "invoice_number": "INV-2026-0001",
+      "total_amount": "350.00"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 1,
+    "fields": {
+      "sale": 1,
+      "product": 1,
+      "service": null,
+      "quantity": 1,
+      "line_total": "100.00"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 2,
+    "fields": {
+      "sale": 1,
+      "product": null,
+      "service": 1,
+      "quantity": 1,
+      "line_total": "250.00"
+    }
+  }
+]

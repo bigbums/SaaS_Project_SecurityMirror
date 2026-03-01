@@ -1,0 +1,45 @@
+{% extends "reports_base.html" %}
+
+{% block report_title %}Tenant Reports{% endblock %}
+{% block report_heading %}{{ tenant.name }} Reports{% endblock %}
+{% block report_greeting %}<strong>Welcome, Tenant Owner {{ request.user.first_name }} {{ request.user.last_name }}</strong>{% endblock %}
+{% block report_context %}Snapshot of users in this tenant.{% endblock %}
+
+{% block report_breadcrumb %}
+{% if is_platform_owner %}
+<p><a href="{% url 'platform_owner_dashboard' %}">← Back to Platform Owner Dashboard</a></p>
+{% endif %}
+{% endblock %}
+
+{% block report_overview %}
+<p>Total Users: <strong>{{ users.count }}</strong></p>
+<p>Active Users: <strong>{{ active_users }}</strong>, Inactive Users: <strong>{{ inactive_users }}</strong></p>
+{% endblock %}
+
+{% block report_table %}
+<h2>Tenant Users</h2>
+<table class="table table-striped table-sortable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(this)">Name</th>
+            <th onclick="sortTable(this)">Email</th>
+            <th onclick="sortTable(this)">Role</th>
+            <th>Status</th>
+            <th onclick="sortTable(this)">Last Login</th>
+            <th onclick="sortTable(this)">Last Logout</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for u in users %}
+        <tr>
+            <td>{{ u.user.first_name }} {{ u.user.last_name }}</td>
+            <td>{{ u.user.email }}</td>
+            <td>{{ u.role }}</td>
+            <td>{% if u.user.is_active %}Active{% else %}Inactive{% endif %}</td>
+            <td>{{ u.last_login|date:"Y-m-d H:i" }}</td>
+            <td>{{ u.last_logout|date:"Y-m-d H:i" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

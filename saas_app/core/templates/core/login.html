@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div class="login-container">
+  <h2>Login</h2>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+
+    {% for field in form %}
+      {% include "core/_form_field.html" with field=field %}
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a></p>
+</div>
+{% endblock %}

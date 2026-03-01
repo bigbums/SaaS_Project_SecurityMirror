@@ -1,0 +1,11 @@
+from core.models import Tenant, TenantUser
+
+# Pick a tenant
+tenant = Tenant.objects.first()
+
+# All TenantUser records for that tenant
+tenant_users = tenant.users.all()
+
+# Print usernames
+for tu in tenant_users:
+    print(tu.user.username, tu.role)

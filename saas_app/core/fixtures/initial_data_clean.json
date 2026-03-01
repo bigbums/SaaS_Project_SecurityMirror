@@ -1,0 +1,124 @@
+﻿[
+{
+  "model": "saas_app.core.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "admin123",
+    "last_login": "2026-01-23T16:06:42.614Z",
+    "is_superuser": false,
+    "first_name": "Bunmi",
+    "last_name": "Olawale",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-28T16:06:42.614Z",
+    "email": "bigbums@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "saas_app.core.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "test123",
+    "last_login": "2026-01-17T16:06:42.614Z",
+    "is_superuser": false,
+    "first_name": "Ada",
+    "last_name": "Okafor",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-26T16:06:42.614Z",
+    "email": "user1@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "saas_app.core.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "test123",
+    "last_login": "2025-12-25T16:06:42.614Z",
+    "is_superuser": false,
+    "first_name": "John",
+    "last_name": "Doe",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-25T16:06:42.614Z",
+    "email": "user2@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "saas_app.core.smeprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "company_name": "BigBums Ltd",
+    "subscription_plan": "premium",
+    "created_at": "2026-01-24T15:06:42.809Z"
+  }
+},
+{
+  "model": "saas_app.core.smeprofile",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "company_name": "TechNova",
+    "subscription_plan": "standard",
+    "created_at": "2026-01-24T15:06:42.812Z"
+  }
+},
+{
+  "model": "saas_app.core.tenant",
+  "pk": 1,
+  "fields": {
+    "name": "Tenant Alpha",
+    "email": "alpha@example.com",
+    "tier": "premium",
+    "storage_type": "cloud",
+    "status": "active",
+    "created_at": "2026-01-24T15:06:42.815Z"
+  }
+},
+{
+  "model": "saas_app.core.tenant",
+  "pk": 2,
+  "fields": {
+    "name": "Tenant Beta",
+    "email": "beta@example.com",
+    "tier": "standard",
+    "storage_type": "local",
+    "status": "active",
+    "created_at": "2026-01-24T15:06:42.818Z"
+  }
+},
+{
+  "model": "saas_app.core.tenantuser",
+  "pk": 1,
+  "fields": {
+    "tenant": 1,
+    "user": 1,
+    "role": "Owner"
+  }
+},
+{
+  "model": "saas_app.core.tenantuser",
+  "pk": 2,
+  "fields": {
+    "tenant": 1,
+    "user": 2,
+    "role": "Manager"
+  }
+},
+{
+  "model": "saas_app.core.tenantuser",
+  "pk": 3,
+  "fields": {
+    "tenant": 2,
+    "user": 3,
+    "role": "Staff"
+  }
+}
+]

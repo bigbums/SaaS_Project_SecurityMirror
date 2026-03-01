@@ -1,0 +1,102 @@
+{% extends "reports_base.html" %}
+
+{% block report_title %}Global Reports{% endblock %}
+{% block report_heading %}Global Reports{% endblock %}
+{% block report_greeting %}
+<strong>Welcome, Platform Owner {{ request.user.first_name }} {{ request.user.last_name }}</strong>
+{% endblock %}
+{% block report_context %}
+Snapshot of all tenants and platform users across the platform.
+{% endblock %}
+
+{% block report_overview %}
+<p>Total Tenants: <strong>{{ tenants.count }}</strong></p>
+<p>Tenant Users → Active: <strong>{{ active_tenant_users }}</strong>, Inactive: <strong>{{ inactive_tenant_users }}</strong></p>
+<p>Platform Users → Active: <strong>{{ active_platform_users }}</strong>, Inactive: <strong>{{ inactive_platform_users }}</strong></p>
+
+<!-- Chart.js visualization -->
+<canvas id="overviewChart" width="400" height="200"></canvas>
+
+{% load static %}
+{% load json_script %}
+
+{% json_script login_labels 'loginLabels' %}
+{% json_script login_counts 'loginCounts' %}
+
+
+
+{% json_script active_tenant_users 'activeTenantUsers' %}
+{% json_script inactive_tenant_users 'inactiveTenantUsers' %}
+{% json_script active_platform_users 'activePlatformUsers' %}
+{% json_script inactive_platform_users 'inactivePlatformUsers' %}
+
+<script>
+const activeTenantUsers = JSON.parse(document.getElementById('activeTenantUsers').textContent);
+const inactiveTenantUsers = JSON.parse(document.getElementById('inactiveTenantUsers').textContent);
+const activePlatformUsers = JSON.parse(document.getElementById('activePlatformUsers').textContent);
+const inactivePlatformUsers = JSON.parse(document.getElementById('inactivePlatformUsers').textContent);
+
+new Chart(document.getElementById('overviewChart'), {
+    type: 'pie',
+    data: {
+        labels: [
+            'Active Tenant Users',
+            'Inactive Tenant Users',
+            'Active Platform Users',
+            'Inactive Platform Users'
+        ],
+        datasets: [{
+            data: [
+                activeTenantUsers,
+                inactiveTenantUsers,
+                activePlatformUsers,
+                inactivePlatformUsers
+            ],
+            backgroundColor: ['#4CAF50', '#F44336', '#2196F3', '#FF9800'],
+            borderColor: '#fff',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { position: 'bottom' },
+            title: { display: true, text: 'User Activity Snapshot' }
+        }
+    }
+});
+</script>
+
+
+
+{% endblock %}
+
+{% block report_table %}
+<h2>Tenants</h2>
+<table class="table table-striped table-sortable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(this)">Tenant Name</th>
+            <th onclick="sortTable(this)">Owner</th>
+            <th onclick="sortTable(this)">Created</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tenant in tenants %}
+        <tr>
+            <td>{{ tenant.name }}</td>
+            <td>{{ tenant.owner.user.first_name }} {{ tenant.owner.user.last_name }}</td>
+            <td>{{ tenant.created_at|date:"Y-m-d" }}</td>
+            <td>
+                {% if tenant.is_active %}
+                    <span style="color: green; font-weight: bold;">Active</span>
+                {% else %}
+                    <span style="color: red; font-weight: bold;">Inactive</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

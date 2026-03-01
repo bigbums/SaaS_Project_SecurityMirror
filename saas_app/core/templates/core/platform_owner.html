@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Platform Owner Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard-hero">
+    <h1>Platform Owner Dashboard</h1>
+    <p>
+        <strong>Welcome, Platform Owner {{ request.user.first_name }} {{ request.user.last_name }}</strong>
+    </p>
+    <p>
+        You currently manage <strong>{{ tenants.count }}</strong> tenants and 
+        <strong>{{ platform_users.count }}</strong> platform users.
+    </p>
+</div>
+
+
+<div class="dashboard-container">
+    <h2>Overview</h2>
+    <p>This section gives you a quick snapshot of your platform tenants and activity.</p>
+
+    <div class="sme-info">
+    <h3>Platform Details</h3>
+    <p>Total Tenants: <strong>{{ tenants.count }}</strong></p>
+    <p>
+        Tenant Users → 
+        Active: <strong>{{ active_tenant_users }}</strong>, 
+        Inactive: <strong>{{ inactive_tenant_users }}</strong>
+    </p>
+    <p>
+        Platform Users → 
+        Active: <strong>{{ active_platform_users }}</strong>, 
+        Inactive: <strong>{{ inactive_platform_users }}</strong>
+    </p>
+</div>
+
+    <div class="actions">
+        <h3>Quick Actions</h3>
+        <ul>
+            <li><a href="{% url 'create_tenant' %}">→ Create New Tenant</a></li>
+            <li><a href="{% url 'manage_tenants' %}">→ Manage Tenants</a></li>
+            <li><a href="{% url 'reports' %}">→ View Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="dashboardTabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#tenants">Tenants</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#platform-users">Platform Users</a>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-3">
+        <!-- Tenants Tab -->
+        <div class="tab-pane fade show active" id="tenants">
+            <div class="tenant-list">
+                <h2>All Tenants</h2>
+                <table class="table table-striped table-sortable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(this)">Tenant Name</th>
+                            <th onclick="sortTable(this)">Owner</th>
+                            <th onclick="sortTable(this)">Created</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for tenant in tenants %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'platform_tenant_detail' tenant.id %}">
+                                    {{ tenant.name }}
+                                </a>
+                            </td>
+                            <td>{{ tenant.owner.user.first_name }} {{ tenant.owner.user.last_name }}</td>
+                            <td>{{ tenant.created_at|date:"Y-m-d" }}</td>
+                            <td>{% if tenant.is_active %}Active{% else %}Inactive{% endif %}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Platform Users Tab -->
+        <div class="tab-pane fade" id="platform-users">
+            <div class="actions">
+                <ul>
+                    <li><a href="?status=active">→ Show Active Users</a></li>
+                    <li><a href="?status=inactive">→ Show Inactive Users</a></li>
+                    <li><a href="?">→ Show All Users</a></li>
+                </ul>
+            </div>
+
+            <table class="table table-striped table-sortable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(this)">Name</th>
+                        <th onclick="sortTable(this)">Email</th>
+                        <th onclick="sortTable(this)">Role</th>
+                        <th>Status</th>
+                        <th onclick="sortTable(this)">Last Login</th>
+                        <th onclick="sortTable(this)">Last Logout</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for u in platform_users %}
+                    <tr>
+                        <td>{{ u.user.first_name }} {{ u.user.last_name }}</td>
+                        <td>{{ u.user.email }}</td>
+                        <td>{{ u.role }}</td>
+                        <td>
+                            {% if u.user.is_active %}
+                                <span style="color: green; font-weight: bold;">● Online</span>
+                            {% else %}
+                                <span style="color: red; font-weight: bold;">● Offline</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ u.last_login|date:"Y-m-d H:i" }}</td>
+                        <td>{{ u.last_logout|date:"Y-m-d H:i" }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Sorting Script -->
+<script>
+function sortTable(header) {
+    const table = header.closest("table");
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
+    const index = Array.from(header.parentNode.children).indexOf(header);
+    const ascending = !header.classList.contains("asc");
+
+    rows.sort((a, b) => {
+        const aText = a.children[index].innerText.trim();
+        const bText = b.children[index].innerText.trim();
+        return ascending ? aText.localeCompare(bText) : bText.localeCompare(aText);
+    });
+
+    rows.forEach(row => table.querySelector("tbody").appendChild(row));
+    table.querySelectorAll("th").forEach(th => th.classList.remove("asc", "desc"));
+    header.classList.add(ascending ? "asc" : "desc");
+}
+</script>
+{% endblock %}

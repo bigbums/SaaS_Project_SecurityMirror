@@ -1,0 +1,8 @@
+{
+  "backup_retention_days": 30,
+  "backup_dir": "reports",
+  "log_file": "reports/export_log.txt",
+  "reports_dir": "reports",
+  "error_log_max_entries": 200,
+  "log_retention_days": 30
+}

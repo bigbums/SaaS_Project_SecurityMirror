@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div class="signup-container">
+  <h2>Create Your Account</h2>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+
+    {% for field in form %}
+  {% include "core/_form_field.html" with field=field %}
+  {% if field.name == "subscription_plan" %}
+    <small class="form-text text-muted">
+      Choose the plan that matches your business size. See <a href="{% url 'landing' %}">pricing details</a>.
+    </small>
+  {% endif %}
+{% endfor %}
+
+
+    {% for field in form %}
+      {% include "core/_form_field.html" with field=field %}
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+
+  <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+</div>
+{% endblock %}

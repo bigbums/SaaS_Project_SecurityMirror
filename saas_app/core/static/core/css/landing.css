@@ -1,0 +1,101 @@
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* desktop: 3 columns */
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Enterprise card centered on second row */
+.card.enterprise {
+  grid-column: 2;
+}
+
+/* Distinct background colors per tier */
+.card.free {
+  background: #eafaf1; /* soft green tint */
+  border-top: 4px solid #2ecc71;
+}
+.card.free:hover {
+  background: #d4f5e3; /* deeper green tint */
+}
+
+.card.standard {
+  background: #fff8e6; /* soft orange tint */
+  border-top: 4px solid #f39c12;
+}
+.card.standard:hover {
+  background: #ffeccc; /* deeper orange tint */
+}
+
+.card.premium {
+  background: #f5eafc; /* soft purple tint */
+  border-top: 4px solid #9b59b6;
+}
+.card.premium:hover {
+  background: #ebd9f9; /* deeper purple tint */
+}
+
+.card.enterprise {
+  background: #fdeaea; /* soft red tint */
+  border-top: 4px solid #e74c3c;
+}
+.card.enterprise:hover {
+  background: #f9d6d6; /* deeper red tint */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 992px) {
+  .pricing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card.enterprise {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 600px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+  .card.enterprise {
+    grid-column: auto;
+  }
+}

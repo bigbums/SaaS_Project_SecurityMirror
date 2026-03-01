@@ -1,0 +1,46 @@
+[
+  {
+    "model": "core.tier",
+    "pk": 1,
+    "fields": {
+      "name": "Free",
+      "max_users": 3,
+      "max_locations": 1,
+      "price": 0,
+      "features": []
+    }
+  },
+  {
+    "model": "core.tier",
+    "pk": 2,
+    "fields": {
+      "name": "Standard",
+      "max_users": 10,
+      "max_locations": 2,
+      "price": 0,
+      "features": ["branding"]
+    }
+  },
+  {
+    "model": "core.tier",
+    "pk": 3,
+    "fields": {
+      "name": "Premium",
+      "max_users": 50,
+      "max_locations": 10,
+      "price": 5000,
+      "features": ["branding", "invoice_customization"]
+    }
+  },
+  {
+    "model": "core.tier",
+    "pk": 4,
+    "fields": {
+      "name": "Enterprise",
+      "max_users": 200,
+      "max_locations": 50,
+      "price": 20000,
+      "features": ["branding", "invoice_customization"]
+    }
+  }
+]

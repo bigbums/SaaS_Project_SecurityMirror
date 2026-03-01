@@ -1,0 +1,962 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+/* Hero header */
+.landing-header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #007bff, #6f42c1);
+  color: #fff;
+}
+
+.landing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Pricing container */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.criteria, .features, .upgrade {
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  margin-bottom: 0.5rem;
+}
+
+.features ul li::before {
+  content: "✔ ";
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Color themes */
+.free { border-top: 6px solid #28a745; }
+.free .btn { background: #28a745; }
+
+.standard { border-top: 6px solid #007bff; }
+.standard .btn { background: #007bff; }
+
+.premium { border-top: 6px solid #6f42c1; }
+.premium .btn { background: #6f42c1; }
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Dashboard container */
+.dashboard-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.dashboard-container h2, 
+.dashboard-container h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* SME Info section */
+.sme-info {
+  background: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 5px solid #007bff;
+}
+
+.sme-info p {
+  margin: 0.5rem 0;
+}
+
+/* Tenant list table */
+.tenant-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.tenant-list th, 
+.tenant-list td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tenant-list th {
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tenant-list tr:hover {
+  background: #f1f9ff;
+}
+
+/* Quick actions */
+.actions {
+  background: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #28a745;
+}
+
+.actions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.actions ul li {
+  margin: 0.5rem 0;
+}
+
+.actions ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.actions ul li a:hover {
+  color: #0056b3;
+}
+
+/* Buttons (reuse from landing) */
+.actions ul li a::before {
+  content: "→ ";
+  color: #28a745;
+  font-weight: bold;
+}
+/* Dashboard hero header */
+.dashboard-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #28a745, #007bff);
+  color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+/* Navigation bar */
+.navbar {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.navbar .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-right a:hover {
+  color: #00bfff;
+}
+
+/* Login button styling */
+.login-btn {
+  background: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #fff !important;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+/* Login page styling */
+.login-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login-container .btn.login-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.login-container .btn.login-btn:hover {
+  background: #0056b3;
+}
+
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+/* Signup page styling */
+.signup-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.signup-container h2 {
+  margin-bottom: 1.5rem;
+  color: #28a745;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-container label {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.signup-container select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.signup-container .btn.signup-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.signup-container .btn.signup-btn:hover {
+  background: #1e7e34;
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/* Signup button styling */
+.signup-btn {
+  background: #28a745;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #fff !important;
+  margin-left: 1rem;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #1e7e34;
+}
+/* Hover glow effects for pricing cards */
+.card.free:hover {
+  box-shadow: 0 0 20px rgba(40, 167, 69, 0.6); /* green glow */
+}
+
+.card.standard:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.6); /* blue glow */
+}
+
+.card.premium:hover {
+  box-shadow: 0 0 20px rgba(111, 66, 193, 0.6); /* purple glow */
+}
+/* Base card transition */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.4s ease; /* smooth glow */
+}
+
+/* Hover glow effects per tier */
+.card.free:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(40, 167, 69, 0.6); /* green glow */
+}
+
+.card.standard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.6); /* blue glow */
+}
+
+.card.premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(111, 66, 193, 0.6); /* purple glow */
+}
+/* Buttons inside cards */
+.card .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.25s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: scale(1.05); /* subtle enlargement */
+  opacity: 0.95;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* slight shadow for depth */
+}
+/* Pulse animation for Premium button */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(111, 66, 193, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(111, 66, 193, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(111, 66, 193, 0.6);
+  }
+}
+
+.card.premium .btn:hover {
+  animation: pulseGlow 1.5s infinite;
+  transform: scale(1.05); /* keep the subtle enlargement */
+}
+/* Recommended ribbon */
+.card.standard::before {
+  content: "Recommended";
+  position: absolute;
+  top: -10px;
+  right: -40px;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  transform: rotate(45deg);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  font-size: 0.85rem;
+}
+
+/* Ensure card has relative positioning for ribbon */
+.card {
+  position: relative;
+}
+/* Pop-in animation for Standard card */
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card.standard {
+  animation: popIn 0.8s ease-out;
+}
+/* Looping highlight glow for Standard card */
+@keyframes highlightGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+}
+
+.card.standard {
+  animation: popIn 0.8s ease-out, highlightGlow 4s ease-in-out infinite;
+}
+/* Looping highlight glow for Standard card */
+@keyframes highlightGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+}
+
+.card.standard {
+  animation: popIn 0.8s ease-out, highlightGlow 4s ease-in-out infinite;
+}
+/* Looping highlight glow for Standard card */
+@keyframes highlightGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.0);
+  }
+}
+
+.card.standard {
+  animation: popIn 0.8s ease-out, highlightGlow 4s ease-in-out infinite;
+}
+/* Sliding border highlight for Standard card */
+@keyframes borderSlide {
+  0% {
+    border-image-source: linear-gradient(90deg, #007bff, transparent);
+    border-image-slice: 1;
+  }
+  25% {
+    border-image-source: linear-gradient(180deg, #007bff, transparent);
+    border-image-slice: 1;
+  }
+  50% {
+    border-image-source: linear-gradient(270deg, #007bff, transparent);
+    border-image-slice: 1;
+  }
+  75% {
+    border-image-source: linear-gradient(360deg, #007bff, transparent);
+    border-image-slice: 1;
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, #007bff, transparent);
+    border-image-slice: 1;
+  }
+}
+
+.card.standard {
+  background: linear-gradient(135deg, #e6f0ff, #ffffff); /* soft blue tint */
+  border: 3px solid transparent;
+  border-radius: 12px;
+  border-image-slice: 1;
+  animation: popIn 0.8s ease-out, highlightGlow 4s ease-in-out infinite;
+  transition: background 0.6s ease;
+}
+
+.card.standard:hover {
+  background: linear-gradient(135deg, #d0e4ff, #f8fbff); /* deeper blue tint */
+  animation: borderSlide 2s linear infinite, highlightGlow 4s ease-in-out infinite;
+}
+/* Heartbeat scale effect for Standard card */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.standard:hover {
+  animation: borderSlide 2s linear infinite, highlightGlow 4s ease-in-out infinite, heartbeat 0.8s ease-in-out;
+}
+/* Continuous heartbeat effect for Standard card */
+@keyframes slowHeartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.standard {
+  background: linear-gradient(135deg, #e6f0ff, #ffffff); /* soft blue tint */
+  border: 3px solid transparent;
+  border-radius: 12px;
+  border-image-slice: 1;
+  animation: popIn 0.8s ease-out, highlightGlow 4s ease-in-out infinite, slowHeartbeat 6s ease-in-out infinite;
+  transition: background 0.6s ease;
+}
+
+.card.standard:hover {
+  background: linear-gradient(135deg, #d0e4ff, #f8fbff); /* deeper blue tint */
+  animation: borderSlide 2s linear infinite, highlightGlow 4s ease-in-out infinite, slowHeartbeat 6s ease-in-out infinite;
+}
+.login-btn, .signup-btn, .dashboard-btn, .logout-btn {
+    margin-left: 15px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.signup-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.dashboard-btn {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.login-btn:hover { background-color: #0056b3; }
+.signup-btn:hover { background-color: #218838; }
+.dashboard-btn:hover { background-color: #117a8b; }
+.logout-btn:hover { background-color: #c82333; }
+.subscription-form {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.subscription-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.subscription-form select {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.btn-update {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+}
+
+.messages {
+    margin: 15px 0;
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out; /* smooth fade */
+}
+
+/* Success messages (green) */
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error messages (red) */
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.close-btn {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 10px;
+}
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out; /* fade-out */
+    animation: slideDown 0.5s ease-out; /* slide-in */
+}
+
+/* new keyframe for animation*/
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out;
+    animation: slideDown 0.5s ease-out; /* slide-in when appearing */
+}
+
+.close-btn {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 10px;
+}
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out;
+    animation: slideDown 0.5s ease-out; /* slide-in when appearing */
+}
+
+.messages {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.messages li {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
+.messages li.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.messages li.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.messages li.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+/* Logout Page Styling */
+.logout-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logout-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logout-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.logout-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logout-actions .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.logout-actions .login-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logout-actions .login-btn:hover {
+    background-color: #0056b3;
+}
+
+.logout-actions .home-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.logout-actions .home-btn:hover {
+    background-color: #5a6268;
+}
+/* Fade + slide-up animation for logout card */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logout-container {
+    animation: fadeSlideIn 0.8s ease-out;
+}
+/* Gentle hover animation for logout buttons */
+.logout-actions .btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logout-actions .btn:hover {
+    transform: scale(1.05); /* slight enlargement */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle glow/shadow */
+}

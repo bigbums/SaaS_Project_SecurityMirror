@@ -1,0 +1,65 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}{{ tenant.name }} Dashboard{% endblock %}
+
+{% block content %}
+<div class="tenant-dashboard">
+  <h1>{{ tenant.name }} Dashboard</h1>
+
+  <p>Welcome, {{ request.user.email }} (Role: {{ request.user.role }})</p>
+
+  <section class="tenant-stats">
+    <h2>Tenant Overview</h2>
+    <ul>
+      <li><strong>Users:</strong> {{ users_count }} / {{ max_users }}</li>
+      <li><strong>Locations:</strong> {{ locations_count }} / {{ max_locations }}</li>
+      <li><strong>Tier:</strong> {{ tier.name }}</li>
+    </ul>
+  </section>
+
+  <section class="invoices">
+    <h2>Invoices</h2>
+    {% if "invoice:view" in request.user.permissions %}
+      <table>
+        <thead>
+          <tr>
+            <th>Reference</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for invoice in invoices %}
+          <tr>
+            <td>{{ invoice.reference }}</td>
+            <td>{{ invoice.amount }} {{ invoice.currency }}</td>
+            <td>{{ invoice.status }}</td>
+            <td>
+              {% if "invoice:download" in request.user.permissions %}
+                <a href="{% url 'download_invoice' invoice.id %}">Download</a>
+              {% endif %}
+              {% if "invoice:edit" in request.user.permissions %}
+                <a href="{% url 'invoice_edit' invoice.id %}">Edit</a>
+              {% endif %}
+              {% if "invoice:delete" in request.user.permissions %}
+                <a href="{% url 'invoice_delete' invoice.id %}">Delete</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="4">No invoices found.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>You do not have permission to view invoices.</p>
+    {% endif %}
+
+    {% if "Invoices:create" in request.user.permissions %}
+      <a href="{% url 'invoice_create' tenant.id %}" class="btn btn-primary">Create Invoice</a>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

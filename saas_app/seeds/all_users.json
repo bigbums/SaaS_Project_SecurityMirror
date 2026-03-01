@@ -1,0 +1,55 @@
+{
+  "platform_users": [
+    {
+      "email": "platform_owner@demo.com",
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "password": "OwnerPass123!",
+      "role": "platform_owner"
+    },
+    {
+      "email": "platform_admin@demo.com",
+      "first_name": "Bob",
+      "last_name": "Smith",
+      "password": "AdminPass123!",
+      "role": "platform_admin"
+    },
+    {
+      "email": "platform_manager@demo.com",
+      "first_name": "Carol",
+      "last_name": "Williams",
+      "password": "ManagerPass123!",
+      "role": "platform_manager"
+    },
+    {
+      "email": "platform_user@demo.com",
+      "first_name": "David",
+      "last_name": "Brown",
+      "password": "UserPass123!",
+      "role": "platform_user"
+    }
+  ],
+  "tenant_users": [
+    {
+      "email": "tenant_owner@demo.com",
+      "first_name": "Eve",
+      "last_name": "Taylor",
+      "password": "OwnerPass123!",
+      "role": "owner"
+    },
+    {
+      "email": "tenant_manager@demo.com",
+      "first_name": "Frank",
+      "last_name": "Lee",
+      "password": "ManagerPass123!",
+      "role": "manager"
+    },
+    {
+      "email": "tenant_member@demo.com",
+      "first_name": "Grace",
+      "last_name": "Kim",
+      "password": "MemberPass123!",
+      "role": "member"
+    }
+  ]
+}
