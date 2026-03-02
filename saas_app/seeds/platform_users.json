@@ -1,0 +1,30 @@
+[
+  {
+    "email": "platform_owner@demo.com",
+    "first_name": "Alice",
+    "last_name": "Johnson",
+    "password": "OwnerPass123!",
+    "role": "platform_owner"
+  },
+  {
+    "email": "platform_admin@demo.com",
+    "first_name": "Bob",
+    "last_name": "Smith",
+    "password": "AdminPass123!",
+    "role": "platform_admin"
+  },
+  {
+    "email": "platform_manager@demo.com",
+    "first_name": "Carol",
+    "last_name": "Williams",
+    "password": "ManagerPass123!",
+    "role": "platform_manager"
+  },
+  {
+    "email": "platform_user@demo.com",
+    "first_name": "David",
+    "last_name": "Brown",
+    "password": "UserPass123!",
+    "role": "platform_user"
+  }
+]

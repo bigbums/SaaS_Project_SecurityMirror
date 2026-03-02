@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+
+{% block title %}User Limit Reached{% endblock %}
+
+{% block content %}
+<h2>User Limit Reached</h2>
+<p>
+    The tenant <strong>{{ tenant.tenant_name }}</strong> has reached the maximum number of users allowed
+    under your <strong>{{ tenant.sme.subscription_plan|title }}</strong> plan.
+</p>
+<a href="{% url 'upgrade' %}">Upgrade Plan</a>
+<a href="{% url 'dashboard' %}">Back to Dashboard</a>
+{% endblock %}

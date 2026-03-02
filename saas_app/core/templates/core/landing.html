@@ -1,0 +1,79 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Landing Page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/landing.css' %}">
+{% endblock %}
+
+{% block content %}
+  <header class="landing-header">
+      <h1>Grow Your Business, One Shop at a Time</h1>
+      <p>From single shops to multi‑tenant enterprises, we’ve got you covered.</p>
+  </header>
+
+  <section class="pricing-container">
+    {# Render Free, Standard, Premium first #}
+    {% for tier in tiers %}
+      {% if tier.name != "Enterprise" %}
+        <div class="card {{ tier.name|lower }}">
+          <h2>{{ tier.name|capfirst }} Tier</h2>
+
+          {% if tier.name == "Free" %}
+            <p><em>Start Simple</em></p>
+            <div class="criteria"><strong>Criteria:</strong><p>• 1 shop only<br>• ≤ 5 users</p></div>
+            <div class="features"><strong>Features:</strong>
+              <ul><li>Minimal RBAC</li><li>Daily summary reports</li><li>Staff invites</li><li>Transaction entry</li></ul>
+            </div>
+          {% elif tier.name == "Standard" %}
+            <p><em>Expand Confidently</em></p>
+            <div class="criteria"><strong>Criteria:</strong><p>• >1 shop OR >5 users<br>• Up to 100 users</p></div>
+            <div class="features"><strong>Features:</strong>
+              <ul><li>Full RBAC</li><li>Multi‑shop management</li><li>Branch‑level reporting</li><li>Consolidated analytics</li></ul>
+            </div>
+          {% elif tier.name == "Premium" %}
+            <p><em>Scale Without Limits</em></p>
+            <div class="criteria"><strong>Criteria:</strong><p>• ≥20 shops OR >100 users<br>• Or direct signup</p></div>
+            <div class="features"><strong>Features:</strong>
+              <ul><li>Advanced/custom RBAC</li><li>Tenant admins</li><li>Unlimited tenants & users</li><li>Global analytics</li></ul>
+            </div>
+          {% endif %}
+
+          <p><strong>Max Users:</strong>
+            {% if tier.max_users %}
+              {{ tier.max_users }}
+            {% else %}
+              Unlimited
+            {% endif %}
+          </p>
+
+          <a href="{% url 'signup' tier.id %}" class="btn">
+            Sign Up {{ tier.name|capfirst }}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    {# Render Enterprise last, centered #}
+    {% for tier in tiers %}
+      {% if tier.name == "Enterprise" %}
+        <div class="card enterprise">
+          <h2>{{ tier.name|capfirst }} Tier</h2>
+          <p><em>Custom Solutions</em></p>
+          <div class="criteria"><strong>Criteria:</strong><p>• Tailored for large organizations<br>• On‑premise hosting</p></div>
+          <div class="features"><strong>Features:</strong>
+            <ul><li>Dedicated support</li><li>Custom integrations</li><li>Enterprise‑grade security</li><li>Unlimited scalability</li></ul>
+          </div>
+          <p><strong>Max Users:</strong> Unlimited</p>
+          <a href="{% url 'signup' tier.id %}" class="btn">
+            Sign Up Enterprise
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+  <div class="landing-login">
+  <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+</div>
+
+{% endblock %}

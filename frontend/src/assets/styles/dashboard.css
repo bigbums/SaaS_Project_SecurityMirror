@@ -1,0 +1,113 @@
+/* src/assets/styles/dashboard.css */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background-color: #1f2937; /* dark gray */
+  color: #fff;
+  padding: 1rem;
+}
+
+.dashboard-sidebar a {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.dashboard-sidebar a:hover {
+  background-color: #374151;
+  color: #fff;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.content-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* existing dashboard layout styles remain unchanged above */
+
+/* Invoice Table Styles */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.invoice-table th,
+.invoice-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.status.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.action-btn {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Invoice Card Styles */
+.invoice-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2563eb;
+  text-decoration: underline;
+}

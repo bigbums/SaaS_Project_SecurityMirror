@@ -1,0 +1,173 @@
+{% extends "core/base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% if messages %}
+  <div class="messages">
+    {% for message in messages %}
+      <div class="alert {{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% block content %}
+<header class="dashboard-header">
+    <h1>Dashboard</h1>
+    <p>Welcome, {{ request.user.username }} (Role: {{ request.user.role }})</p>
+</header>
+
+{# Tenant-focused section for tenant users #}
+{% if memberships %}
+  <h2>Your Tenants</h2>
+  <ul>
+    {% for membership in memberships %}
+      <li>
+        {{ membership.tenant.name }} ({{ membership.tenant.email }})  
+        — Role: {{ membership.role }}  
+        — Plan: {{ membership.tenant.tier.name }}
+
+        <div class="usage">
+          Users: {{ membership.tenant.current_users_count }}{% if membership.tenant.tier.max_users %}/{{ membership.tenant.tier.max_users }}{% endif %}  
+          Locations: {{ membership.tenant.current_locations_count }}{% if membership.tenant.tier.max_locations %}/{{ membership.tenant.tier.max_locations }}{% endif %}
+        </div>
+
+        {% if membership.tenant.tier.analytics_enabled %}
+          <div class="feature">📊 Analytics Dashboard</div>
+        {% endif %}
+        {% if membership.tenant.tier.reports_enabled %}
+          <div class="feature">📑 Consolidated Reports</div>
+        {% endif %}
+        {% if membership.tenant.tier.advanced_hosting_enabled %}
+          <div class="feature">⚙️ Advanced Hosting Options</div>
+        {% endif %}
+
+        <a href="{% url 'payment_history' membership.tenant.id %}" class="btn btn-secondary">
+          View Payment History
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{# PlatformGlobalAdmin section: full visibility #}
+{% if request.user.role == "PlatformGlobalAdmin" %}
+  <h2>All Tenants (Global View)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Tier</th><th>Users</th><th>Locations</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for tenant in tenants %}
+      <tr>
+        <td>{{ tenant.name }}</td>
+        <td>{{ tenant.email }}</td>
+        <td>{{ tenant.tier.name }}</td>
+        <td>{{ tenant.current_users_count }}</td>
+        <td>{{ tenant.current_locations_count }}</td>
+        <td>
+          {% if "tenants:edit" in request.user.permissions %}
+            <a href="{% url 'tenant_edit' tenant.id %}">Edit</a>
+          {% endif %}
+          {% if "tenants:delete" in request.user.permissions %}
+            <a href="{% url 'tenant_delete' tenant.id %}">Delete</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>All Invoices</h2>
+  {% if "invoices:view" in request.user.permissions %}
+    <table>
+      <thead>
+        <tr><th>Reference</th><th>Tenant</th><th>Amount</th><th>Status</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        {% for invoice in invoices %}
+        <tr>
+          <td>{{ invoice.reference }}</td>
+          <td>{{ invoice.tenant.name }}</td>
+          <td>{{ invoice.amount }} {{ invoice.currency }}</td>
+          <td>{{ invoice.status }}</td>
+          <td>
+            {% if "invoices:download" in request.user.permissions %}
+              <a href="{% url 'download_invoice' invoice.id %}">Download</a>
+            {% endif %}
+            {% if "invoices:edit" in request.user.permissions %}
+              <a href="{% url 'invoice_edit' invoice.id %}">Edit</a>
+            {% endif %}
+            {% if "invoices:delete" in request.user.permissions %}
+              <a href="{% url 'invoice_delete' invoice.id %}">Delete</a>
+            {% endif %}
+            {% if "invoices:markPaid" in request.user.permissions %}
+              <a href="{% url 'invoice_mark_paid' invoice.id %}">Mark Paid</a>
+            {% endif %}
+            {% if "invoices:resend" in request.user.permissions %}
+              <a href="{% url 'invoice_resend' invoice.id %}">Resend</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+  <h2>All Payments</h2>
+  {% if "payments:view" in request.user.permissions %}
+    <table>
+      <thead>
+        <tr><th>Reference</th><th>Tenant</th><th>Amount</th><th>Status</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        {% for payment in payments %}
+        <tr>
+          <td>{{ payment.reference }}</td>
+          <td>{{ payment.tenant.name }}</td>
+          <td>{{ payment.amount }} {{ payment.currency }}</td>
+          <td>{{ payment.status }}</td>
+          <td>
+            {% if "payments:download" in request.user.permissions %}
+              <a href="{% url 'download_payment' payment.id %}">Download</a>
+            {% endif %}
+            {% if "payments:edit" in request.user.permissions %}
+              <a href="{% url 'payment_edit' payment.id %}">Edit</a>
+            {% endif %}
+            {% if "payments:delete" in request.user.permissions %}
+              <a href="{% url 'payment_delete' payment.id %}">Delete</a>
+            {% endif %}
+            {% if "payments:markReceived" in request.user.permissions %}
+              <a href="{% url 'payment_mark_received' payment.id %}">Mark Received</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% endif %}
+
+{# PlatformAdmin section: restricted to tenant metadata only #}
+{% if request.user.role == "PlatformAdmin" %}
+  <h2>Tenant Metadata (Admin View)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Tier</th><th>Users</th><th>Locations</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for tenant in tenants %}
+      <tr>
+        <td>{{ tenant.name }}</td>
+        <td>{{ tenant.email }}</td>
+        <td>{{ tenant.tier.name }}</td>
+        <td>{{ tenant.current_users_count }}</td>
+        <td>{{ tenant.current_locations_count }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "core/base.html" %}
+
+{% block title %}Landing Page{% endblock %}
+
+{% block content %}
+  <header class="landing-header">
+      <h1>Grow Your Business, One Shop at a Time</h1>
+      <p>From single shops to multi‑tenant enterprises, we’ve got you covered.</p>
+  </header>
+
+  <section class="pricing-container">
+    <!-- Free Tier -->
+    <div class="card free">
+      <h2>Free Tier</h2>
+      <p><em>Start Simple</em></p>
+      <div class="criteria">
+        <strong>Criteria:</strong>
+        <p>• 1 shop only<br>• ≤ 5 users</p>
+      </div>
+      <div class="features">
+        <strong>Features:</strong>
+        <ul>
+          <li>Minimal RBAC (Owner, Manager, Staff)</li>
+          <li>Daily summary reports</li>
+          <li>Staff invites</li>
+          <li>Transaction entry</li>
+        </ul>
+      </div>
+      <a href="{% url 'signup' %}?plan=free" class="btn" aria-label="Sign up for Free Plan">Sign Up Free</a>
+      <div class="upgrade">
+        <small>Upgrade to Standard when >1 shop OR >5 users</small>
+      </div>
+    </div>
+
+    <!-- Standard Tier -->
+    <div class="card standard">
+      <h2>Standard Tier</h2>
+      <p><em>Expand Confidently</em></p>
+      <div class="criteria">
+        <strong>Criteria:</strong>
+        <p>• >1 shop OR >5 users<br>• Up to 100 users</p>
+      </div>
+      <div class="features">
+        <strong>Features:</strong>
+        <ul>
+          <li>Full RBAC (Owner, Manager, Accountant, Auditor)</li>
+          <li>Multi‑shop management</li>
+          <li>Branch‑level reporting</li>
+          <li>Consolidated analytics</li>
+        </ul>
+      </div>
+      <a href="{% url 'signup' %}?plan=standard" class="btn" aria-label="Sign up for Standard Plan">Sign Up Standard</a>
+      <div class="upgrade">
+        <small>Upgrade to Premium when ≥20 shops OR >100 users</small>
+      </div>
+    </div>
+
+    <!-- Premium Tier -->
+    <div class="card premium">
+      <h2>Premium Tier</h2>
+      <p><em>Scale Without Limits</em></p>
+      <div class="criteria">
+        <strong>Criteria:</strong>
+        <p>• ≥20 shops OR >100 users<br>• Or direct signup</p>
+      </div>
+      <div class="features">
+        <strong>Features:</strong>
+        <ul>
+          <li>Advanced/custom RBAC</li>
+          <li>Tenant admins</li>
+          <li>Unlimited tenants & users</li>
+          <li>Global analytics & enterprise reporting</li>
+        </ul>
+      </div>
+      <a href="{% url 'signup' %}?plan=premium" class="btn" aria-label="Sign up for Premium Plan">Sign Up Premium</a>
+      <div class="upgrade">
+        <small>You are on Premium — full features enabled</small>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+  <div class="messages">
+    {% for message in messages %}
+      <div class="alert {{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+
+  <header class="dashboard-header">
+      <h1>Dashboard</h1>
+      <p>Welcome, {{ user.username }}!</p>
+      <p>Your company: {{ user.smeprofile.company_name }}</p>
+      <p>Current Plan: <strong>{{ user.smeprofile.subscription_plan|capfirst }}</strong></p>
+
+
+  </header>
+
+  <h2>Manage Subscription</h2>
+
+<section class="subscription-actions">
+    <form method="post" action="{% url 'upgrade_subscription' %}" class="subscription-form">
+        {% csrf_token %}
+        <label for="subscription_plan">Change Plan:</label>
+        <select name="subscription_plan" id="subscription_plan">
+            <option value="free" {% if user.smeprofile.subscription_plan == "free" %}selected{% endif %}>Free</option>
+            <option value="premium" {% if user.smeprofile.subscription_plan == "premium" %}selected{% endif %}>Premium</option>
+            <option value="standard" {% if user.smeprofile.subscription_plan == "standard" %}selected{% endif %}>Standard</option>
+        </select>
+        <button type="submit" class="btn-update">Update Plan</button>
+    </form>
+</section>
+
+{% endblock %}

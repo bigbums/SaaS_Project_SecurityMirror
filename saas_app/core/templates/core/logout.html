@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Logged Out - SME Tool{% endblock %}
+
+{% block content %}
+<div class="logout-container">
+    <h2>You’ve been logged out</h2>
+    <p>Thank you for using SME Tool. You can log back in anytime.</p>
+
+    <div class="logout-actions">
+        <a href="{% url 'login' %}" class="btn login-btn">Log back in</a>
+        <a href="{% url 'landing' %}" class="btn home-btn">Return to Home</a>
+    </div>
+</div>
+{% endblock %}

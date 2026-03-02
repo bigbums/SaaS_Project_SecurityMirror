@@ -1,0 +1,54 @@
+[
+{
+  "model": "core.tenant",
+  "fields": {
+    "name": "Demo Tenant",
+    "email": "tenant@example.com",
+    "tier": 1,
+    "status": "active",
+    "created_at": "2026-02-27T00:50:49.250Z",
+    "current_users_count": 0,
+    "current_locations_count": 0
+  }
+},
+{
+  "model": "core.platformcustomer",
+  "pk": 1,
+  "fields": {
+    "name": "Default Customer",
+    "email": "default@example.com"
+  }
+},
+{
+  "model": "core.platformcustomer",
+  "pk": 2,
+  "fields": {
+    "name": "Default Customer",
+    "email": "default@example.com"
+  }
+},
+{
+  "model": "core.platforminvoice",
+  "pk": 1,
+  "fields": {
+    "tenant": [
+      "Demo Tenant"
+    ],
+    "customer": 2,
+    "amount": "100.00",
+    "currency": "USD",
+    "due_date": "2026-02-27",
+    "issued_at": "2026-02-27T00:50:49.278Z",
+    "paid_at": null,
+    "status": "pending",
+    "description": "Test invoice",
+    "pdf_file": "",
+    "audit_log_id": "",
+    "platform_name": "Bumys Cloud",
+    "payment_method": null,
+    "payment_reference": null,
+    "confirmed_by": null,
+    "confirmed_at": null
+  }
+}
+]

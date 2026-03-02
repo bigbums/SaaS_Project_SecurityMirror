@@ -1,0 +1,74 @@
+[
+{
+  "model": "core.tier",
+  "pk": 1,
+  "fields": {
+    "name": "Free",
+    "max_users": 5,
+    "max_locations": 1,
+    "price": 0,
+    "features": []
+  }
+},
+{
+  "model": "core.tier",
+  "pk": 2,
+  "fields": {
+    "name": "Standard",
+    "max_users": 20,
+    "max_locations": 5,
+    "price": 50,
+    "features": [
+      "branding"
+    ]
+  }
+},
+{
+  "model": "core.tier",
+  "pk": 3,
+  "fields": {
+    "name": "Premium",
+    "max_users": 50,
+    "max_locations": 10,
+    "price": 100,
+    "features": [
+      "branding",
+      "invoice_customization"
+    ]
+  }
+},
+{
+  "model": "core.tier",
+  "pk": 4,
+  "fields": {
+    "name": "Enterprise",
+    "max_users": 200,
+    "max_locations": 50,
+    "price": 500,
+    "features": [
+      "branding",
+      "invoice_customization"
+    ]
+  }
+},
+{
+  "model": "core.tenant",
+  "fields": {
+    "name": "Demo Tenant",
+    "email": "tenant@example.com",
+    "tier": 1,
+    "status": "active",
+    "created_at": "2026-02-27T00:50:49.250Z",
+    "current_users_count": 0,
+    "current_locations_count": 0
+  }
+},
+{
+  "model": "core.platformcustomer",
+  "pk": 1,
+  "fields": {
+    "name": "Default Customer",
+    "email": "default@example.com"
+  }
+}
+]

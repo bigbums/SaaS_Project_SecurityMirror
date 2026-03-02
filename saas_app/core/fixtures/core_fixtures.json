@@ -1,0 +1,48 @@
+[
+  {
+    "model": "saas_app.accounts.customuser",
+    "pk": 1,
+    "fields": {
+      "email": "admin@example.com",
+      "password": "pbkdf2_sha256$260000$abc123$hashed_admin123_here",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "first_name": "Admin",
+      "last_name": "User"
+    }
+  },
+  {
+    "model": "saas_app.accounts.customuser",
+    "pk": 2,
+    "fields": {
+      "email": "testuser@example.com",
+      "password": "pbkdf2_sha256$260000$xyz456$hashed_test123_here",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "first_name": "Test",
+      "last_name": "User"
+    }
+  },
+  {
+    "model": "saas_app.core.tenant",
+    "pk": 1,
+    "fields": {
+      "name": "Demo Tenant",
+      "email": "tenant@example.com",
+      "tier": 2,
+      "status": "active",
+      "created_at": "2026-01-28T12:00:00Z"
+    }
+  },
+  {
+    "model": "saas_app.core.tenantuser",
+    "pk": 1,
+    "fields": {
+      "tenant": 1,
+      "user": 2,
+      "role": "owner"
+    }
+  }
+]

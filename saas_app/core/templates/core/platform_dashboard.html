@@ -1,0 +1,104 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Platform Dashboard{% endblock %}
+
+{% block content %}
+<div class="platform-dashboard">
+  <h1>Platform Dashboard</h1>
+  <p>Welcome, {{ request.user.email }} (Role: {{ request.user.role }})</p>
+
+  <section class="tenants">
+    <h2>All Tenants</h2>
+    {% if "tenants:view" in request.user.permissions %}
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Tier</th>
+            <th>Users</th>
+            <th>Locations</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for tenant in tenants %}
+          <tr>
+            <td>{{ tenant.name }}</td>
+            <td>{{ tenant.email }}</td>
+            <td>{{ tenant.tier.name }}</td>
+            <td>{{ tenant.current_users_count }}</td>
+            <td>{{ tenant.current_locations_count }}</td>
+            <td>
+              {% if "tenants:edit" in request.user.permissions %}
+                <a href="{% url 'tenant_edit' tenant.id %}">Edit</a>
+              {% endif %}
+              {% if "tenants:delete" in request.user.permissions %}
+                <a href="{% url 'tenant_delete' tenant.id %}">Delete</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="6">No tenants found.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>You do not have permission to view tenants.</p>
+    {% endif %}
+  </section>
+
+  <section class="invoices">
+    <h2>All Invoices</h2>
+    {% if "invoices:view" in request.user.permissions %}
+      <table>
+        <thead>
+          <tr>
+            <th>Reference</th>
+            <th>Tenant</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for invoice in invoices %}
+          <tr>
+            <td>{{ invoice.reference }}</td>
+            <td>{{ invoice.tenant.name }}</td>
+            <td>{{ invoice.amount }} {{ invoice.currency }}</td>
+            <td>{{ invoice.status }}</td>
+            <td>
+              {% if "invoices:download" in request.user.permissions %}
+                <a href="{% url 'download_invoice' invoice.id %}">Download</a>
+              {% endif %}
+              {% if "invoices:edit" in request.user.permissions %}
+                <a href="{% url 'invoice_edit' invoice.id %}">Edit</a>
+              {% endif %}
+              {% if "invoices:delete" in request.user.permissions %}
+                <a href="{% url 'invoice_delete' invoice.id %}">Delete</a>
+              {% endif %}
+              {% if "invoices:markPaid" in request.user.permissions %}
+                <a href="{% url 'invoice_mark_paid' invoice.id %}">Mark Paid</a>
+              {% endif %}
+              {% if "invoices:resend" in request.user.permissions %}
+                <a href="{% url 'invoice_resend' invoice.id %}">Resend</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="5">No invoices found.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>You do not have permission to view invoices.</p>
+    {% endif %}
+
+    {% if "invoices:create" in request.user.permissions %}
+      <a href="{% url 'invoice_create_platform' %}" class="btn btn-primary">Create Invoice</a>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

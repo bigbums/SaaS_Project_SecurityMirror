@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saas_app"
+version = "0.1.0"
+description = "SaaS application project"
+readme = "README.md"
+requires-python = ">=3.9"
+
+# Automatically include all packages under saas_app/
+dependencies = [
+    "django>=5.0",
+    "celery>=5.3",
+    "djangorestframework>=3.15",
+    # add any other dependencies here
+]
+
+[tool.setuptools.packages.find]
+where = ["saas_app"]
+
+# ✅ New pytest configuration
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "saas_app.settings"
+python_files = "test_*.py"
+testpaths = [
+    "saas_app/core/tests/tenant",
+    "saas_app/core/tests/platform",
+    " saas_app/core/tests"
+   
+
+
+    
+]

@@ -1,0 +1,14 @@
+<!-- core/templates/core/tenant_limit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tenant Limit Reached</title>
+</head>
+<body>
+    <h2>Tenant Limit Reached</h2>
+    <p>Your <strong>{{ plan|title }}</strong> plan does not allow more tenants.</p>
+    <p>Upgrade your subscription to add more tenants.</p>
+    <p><a href="{% url 'dashboard' %}">Back to Dashboard</a></p>
+</body>
+</html>

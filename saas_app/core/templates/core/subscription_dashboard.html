@@ -1,0 +1,16 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+  <h1>Subscription Dashboard</h1>
+  <p>Current plan: {{ profile.subscription_plan|capfirst }}</p>
+
+  {% if messages %}
+    <div class="messages">
+      <ul>
+        {% for message in messages %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endblock %}
