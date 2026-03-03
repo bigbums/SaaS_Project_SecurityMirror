@@ -56,6 +56,9 @@ INSTALLED_APPS = [
     "saas_app.audit",
 ]
 
+LOGOUT_REDIRECT_URL = "login"
+
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -134,17 +137,6 @@ TEMPLATES = [
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 PLATFORM_COMPANY_NAME = "Bumys Cloud"
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "saas_db",
-        "USER": "postgres",
-        "PASSWORD": "123456",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},

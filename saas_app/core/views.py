@@ -148,12 +148,19 @@ def signup_view(request):
         form = SignupForm(initial=initial_data)
     return render(request, "core/signup.html", {"form": form})
 
+from django.shortcuts import render, redirect
+from django.contrib.auth import login, logout
+from .forms import LoginForm
+from .utils import get_user_role, log_json, security_logger  # adjust imports if needed
+
 def login_view(request):
     if request.method == "POST":
         form = LoginForm(request, data=request.POST)
         if form.is_valid():
             user = form.get_user()
             login(request, user)
+
+            # Role-based redirect
             role = get_user_role(user)
             if role == "platform_owner":
                 return redirect("platform_owner_dashboard")
@@ -162,6 +169,9 @@ def login_view(request):
             elif role == "tenant_user":
                 return redirect("dashboard")
             else:
+                # fallback for staff/superusers
+                if user.is_superuser or user.is_staff:
+                    return redirect("admin:index")
                 return redirect("dashboard")
         else:
             log_entry = {
@@ -176,9 +186,16 @@ def login_view(request):
         form = LoginForm()
     return render(request, "core/login.html", {"form": form})
 
+def logout_view(request):
+    logout(request)
+    return redirect("login")  # or "landing" if you prefer
+
+
 class CustomLogoutView(LogoutView):
     def get(self, request, *args, **kwargs):
         return super().post(request, *args, **kwargs)
+    
+
 
 # -------------------
 # Dashboard
