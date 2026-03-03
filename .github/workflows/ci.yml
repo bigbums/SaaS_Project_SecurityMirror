@@ -47,6 +47,11 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libcairo2-dev libjpeg-dev libpng-dev
 
+    - name: Install local package
+      run: |
+        pip install -e .
+
+
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
