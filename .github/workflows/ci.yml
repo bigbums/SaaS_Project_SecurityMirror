@@ -55,16 +55,17 @@ jobs:
 
     - name: Install local package
       run: |
-        pip install -e .
-
+        pip install .
 
     - name: Run migrations
-      run: |
-        python manage.py migrate
+      env:
+        DATABASE_URL: postgres://postgres:postgres@localhost:5432/saas_db
+      run: python manage.py migrate
 
-    - name: Run all tests with coverage
-      run: |
-        pytest --cov=saas_app --cov-report=xml --cov-report=term-missing --cov-fail-under=80 -vv
+    - name: Run tests with coverage
+      env:
+        DATABASE_URL: postgres://postgres:postgres@localhost:5432/saas_db
+      run: pytest --cov=saas_app --cov-report=xml --cov-report=term-missing --cov-fail-under=80 -vv
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
@@ -75,7 +76,7 @@ jobs:
 
   rbac-tests:
     runs-on: ubuntu-latest
-    needs: main-tests   # <-- ensures migrations and main tests finish first
+    needs: main-tests
 
     services:
       postgres:
