@@ -52,3 +52,18 @@ Thumbs.db
 
 # --- Backup ---
 backup/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Node.js
+node_modules/
