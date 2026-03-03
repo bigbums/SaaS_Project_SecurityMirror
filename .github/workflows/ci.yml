@@ -54,17 +54,18 @@ jobs:
         pip install pytest pytest-django pytest-cov
 
     - name: Install local package
-      run: |
-        pip install .
+      run: pip install .
 
     - name: Run migrations
       env:
-        DATABASE_URL: postgres://postgres:postgres@localhost:5432/saas_db
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
       run: python manage.py migrate
 
     - name: Run tests with coverage
       env:
-        DATABASE_URL: postgres://postgres:postgres@localhost:5432/saas_db
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
       run: pytest --cov=saas_app --cov-report=xml --cov-report=term-missing --cov-fail-under=80 -vv
 
     - name: Upload coverage to Codecov
@@ -109,7 +110,8 @@ jobs:
 
     - name: Run RBAC tests
       env:
-        DATABASE_URL: postgres://postgres:postgres@localhost:5432/testdb
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DATABASE_URL: ${{ secrets.RBAC_DATABASE_URL }}
       run: |
         pytest core/tests/test_tenant_invoice_rbac_permissions.py
         pytest core/tests/test_platform_invoice_rbac_permissions.py
