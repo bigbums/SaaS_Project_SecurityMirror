@@ -29,6 +29,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Wait for Postgres
+      run: |
+        until pg_isready -h localhost -p 5432 -U postgres; do
+          echo "Waiting for Postgres..."
+          sleep 2
+        done
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
