@@ -1,7 +1,31 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser, Profile
-from saas_app.core.models import TenantUser
+from saas_app.core.models import TenantUser, Tenant, Tier
+
+class TenantFilter(admin.SimpleListFilter):
+    title = "Tenant"
+    parameter_name = "tenant"
+
+    def lookups(self, request, model_admin):
+        return [(t.id, t.name) for t in Tenant.objects.all()]
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(tenantuser__tenant__id=self.value())
+        return queryset
+
+class TierFilter(admin.SimpleListFilter):
+    title = "Tier"
+    parameter_name = "tier"
+
+    def lookups(self, request, model_admin):
+        return [(tier.id, tier.name) for tier in Tier.objects.all()]
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(tenantuser__tenant__tier__id=self.value())
+        return queryset
 
 class ProfileInline(admin.StackedInline):
     model = Profile
@@ -13,23 +37,9 @@ class CustomUserAdmin(UserAdmin):
     model = CustomUser
     inlines = [ProfileInline]
     list_display = ("email", "first_name", "last_name", "tenant_name", "tenant_tier", "is_staff", "is_active")
-    list_filter = ("is_staff", "is_active", "is_superuser")
+    list_filter = ("is_staff", "is_active", "is_superuser", TenantFilter, TierFilter)
     ordering = ("email",)
     search_fields = ("email", "first_name", "last_name")
-
-    fieldsets = (
-        (None, {"fields": ("email", "password")}),
-        ("Personal info", {"fields": ("first_name", "last_name")}),
-        ("Permissions", {"fields": ("is_staff", "is_active", "is_superuser", "groups", "user_permissions")}),
-        ("Important dates", {"fields": ("last_login",)}),
-    )
-
-    add_fieldsets = (
-        (None, {
-            "classes": ("wide",),
-            "fields": ("email", "first_name", "last_name", "password1", "password2", "is_staff", "is_active"),
-        }),
-    )
 
     def tenant_name(self, obj):
         tenant_user = TenantUser.objects.filter(user=obj).first()
