@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test:
+  main-tests:
     runs-on: ubuntu-latest
 
     services:
@@ -61,16 +61,48 @@ jobs:
       run: |
         pytest --cov=saas_app --cov-report=xml --cov-report=term-missing --cov-fail-under=80 -vv
 
-    - name: Run RBAC tests explicitly
-      env:
-        DATABASE_URL: postgres://postgres:postgres@localhost:5432/saas_db
-      run: |
-        pytest core/tests/test_tenant_invoice_rbac_permissions.py
-        pytest core/tests/test_platform_invoice_rbac_permissions.py
-
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # only needed for private repos
         files: coverage.xml
         fail_ci_if_error: true
+
+  rbac-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: testdb
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-django
+
+    - name: Run RBAC tests
+      env:
+        DATABASE_URL: postgres://postgres:postgres@localhost:5432/testdb
+      run: |
+        pytest core/tests/test_tenant_invoice_rbac_permissions.py
+        pytest core/tests/test_platform_invoice_rbac_permissions.py
