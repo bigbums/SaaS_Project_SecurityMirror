@@ -20,6 +20,7 @@ Django==6.0.1
 django-cors-headers==4.9.0
 django-crontab==0.7.1
 djangorestframework==3.16.1
+dj-database-url>=2.1.0
 factory_boy==3.3.3
 Faker==40.4.0
 flower==2.0.1
