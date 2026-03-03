@@ -6,14 +6,32 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import json
 
-load_dotenv() # loads variables from .env
+
+load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "fallback-secret-key")
+
 DATABASE_URL = os.getenv("DATABASE_URL")
-DATABASES = {
-    "default": dj_database_url.parse(DATABASE_URL)
+
+if DATABASE_URL:
+    DATABASES = {
+        "default": dj_database_url.parse(DATABASE_URL, conn_max_age=600)
     }
+else:
+    # Fallback for local dev if DATABASE_URL is not set
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": "saas_db",
+            "USER": "postgres",
+            "PASSWORD": "123456",
+            "HOST": "localhost",
+            "PORT": "5432",
+        }
+    }
+
+
 DEBUG = True
 ALLOWED_HOSTS = []
 
