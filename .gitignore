@@ -71,3 +71,4 @@ node_modules/
 *.pdf
 platform_invoices/
 
+.env
