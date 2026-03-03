@@ -67,3 +67,7 @@ __pycache__/
 
 # Node.js
 node_modules/
+# Ignore invoice PDFs
+*.pdf
+platform_invoices/
+
