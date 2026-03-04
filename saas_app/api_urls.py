@@ -1,11 +1,16 @@
-# saas_app/api_urls.py
 from rest_framework.routers import DefaultRouter
-from saas_app.core.viewsets import (
-    UserViewSet, ItemViewSet, SaleViewSet, SaleItemViewSet,
-    TenantCustomerViewSet, TenantInvoiceViewSet, TenantPaymentViewSet,
-    TenantViewSet, TenantUserViewSet, PlatformInvoiceViewSet
+from saas_app.core.viewsets.viewsets import (
+    UserViewSet,
+    ItemViewSet,
+    SaleViewSet,
+    SaleItemViewSet,
+    TenantCustomerViewSet,
+    TenantInvoiceViewSet,
+    TenantPaymentViewSet,
+    TenantViewSet,
+    TenantUserViewSet,
+    PlatformInvoiceViewSet,
 )
-from saas_app.core.viewsets import TenantInvoiceViewSet
 
 router = DefaultRouter()
 router.register("users", UserViewSet, basename="user")
@@ -18,7 +23,6 @@ router.register("tenant-customers", TenantCustomerViewSet, basename="tenantcusto
 router.register("tenant-invoices", TenantInvoiceViewSet, basename="tenantinvoice")
 router.register("tenant-payments", TenantPaymentViewSet, basename="tenantpayment")
 router.register("platform-invoices", PlatformInvoiceViewSet, basename="platforminvoice")
-
 
 app_name = "v1"
 urlpatterns = router.urls
