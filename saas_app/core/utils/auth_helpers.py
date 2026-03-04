@@ -1,7 +1,22 @@
 from functools import wraps
 from django.http import HttpResponseForbidden
 from django.contrib.auth.decorators import login_required
-from saas_app.core.models import PlatformUser, TenantUser
+
+
+def is_tenant_owner(user):
+    """
+    Returns True if the user is a tenant owner.
+    """
+    from saas_app.core.models import TenantUser  # local import to avoid circular dependency
+    return TenantUser.objects.filter(user=user, role="owner").exists()
+
+
+def is_platform_owner(user):
+    """
+    Returns True if the user is a platform owner.
+    """
+    from saas_app.core.models import PlatformUser  # local import to avoid circular dependency
+    return PlatformUser.objects.filter(user=user, role="platform_owner").exists()
 
 
 def get_user_role(user):
@@ -12,6 +27,8 @@ def get_user_role(user):
     - "tenant_user"
     - "unknown" if no role found
     """
+    from saas_app.core.models import PlatformUser, TenantUser  # local import
+
     try:
         platform_user = PlatformUser.objects.get(user=user)
         if platform_user.role == "platform_owner":
@@ -29,16 +46,6 @@ def get_user_role(user):
         pass
 
     return "unknown"
-
-
-def is_tenant_owner(user):
-    """Return True if the user is a tenant owner."""
-    return get_user_role(user) == "tenant_owner"
-
-
-def is_platform_owner(user):
-    """Return True if the user is a platform owner."""
-    return get_user_role(user) == "platform_owner"
 
 
 def role_required(required_roles):
@@ -59,4 +66,5 @@ def role_required(required_roles):
                 return HttpResponseForbidden("Access denied")
             return view_func(request, *args, **kwargs)
         return _wrapped_view
+
     return decorator
