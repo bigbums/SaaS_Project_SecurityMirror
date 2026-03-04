@@ -1,15 +1,31 @@
 # Django imports
-import logging
-
-import uuid
-import time
-import requests
+from django.shortcuts import render, redirect
+from django.contrib.auth import login, logout
+from django.views.generic import View
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.http import JsonResponse, HttpResponse, HttpResponseForbidden
 from datetime import timedelta
 
-from django.conf import settings
+
+import json
+from django.views.decorators.csrf import csrf_exempt
+import logging
+from django.shortcuts import render, redirect, get_object_or_404
+from saas_app.core.utils.payments import verify_payment
+
 from django.utils import timezone
+import uuid
+from django.contrib.auth.views import LogoutView
+from django.contrib import messages
+# Services (high-level orchestration)
+from saas_app.core.services.payments import initiate_paystack, verify_paystack, initiate_opay, verify_opay
 
+from saas_app.core.utils.auth_helpers import is_tenant_owner, is_platform_owner, get_user_role
 
+# Utils (low-level helpers)
+from saas_app.core.utils.payments import create_payment, record_payment
+from saas_app.core.utils.logging_helpers import log_json
+from saas_app.core.utils.emails import send_invoice_email
 
 
 from django.db import connections
@@ -21,60 +37,15 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.utils import ImageReader
 
-
-from saas_app.accounts.models import CustomUser, Profile
-from saas_app.core.models import TenantCustomer, PlatformUser, TenantInvoice, PlatformInvoice
-
-from saas_app.core.utils.payments import create_payment, record_payment
-
-from django.contrib.auth.decorators import login_required, user_passes_test
-
-from saas_app.core.utils.payments import verify_payment
-
-import json
-from django.views.decorators.csrf import csrf_exempt
-
-from core.utils.payments import record_payment
-
-from django.shortcuts import render, redirect, get_object_or_404
-from django.http import JsonResponse, HttpResponse, HttpResponseForbidden
-from django.contrib import messages
-from django.contrib.auth import login
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.views import LogoutView
-
-# Models & Forms
-from .models import Tenant, TenantUser, Tier, Location, Payment, TenantInvoice, PlatformInvoice
-from saas_app.accounts.models import CustomUser, Profile
 from .forms import SignupForm, LoginForm
 
-# Services (high-level orchestration)
-from saas_app.core.services.payments import initiate_paystack, verify_paystack, initiate_opay, verify_opay
 
-# Utils (low-level helpers)
-from saas_app.core.utils.payments import record_payment
-from saas_app.core.utils.logging_helpers import log_json
-from saas_app.core.utils.emails import send_invoice_email
-
-# Auth helpers
-#from utils.auth_helpers import get_user_role, role_required
-
-from saas_app.core.utils.auth_helpers import is_tenant_owner, is_platform_owner, get_user_role
+# Project imports
+from saas_app.core.models import Tenant, TenantCustomer, PlatformUser, TenantInvoice, PlatformInvoice, Payment, Tier, TenantUser, Location
 
 
+from saas_app.core.utils.logging_helpers import log_invoice_action
 
-
-# Loggers
-audit_logger = logging.getLogger("audit")
-security_logger = logging.getLogger("security")
-
-# -------------------
-# Utility Functions
-# -------------------
-def get_client_ip(request):
-    """Extract client IP address from request headers."""
-    x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
-    return x_forwarded_for.split(",")[0] if x_forwarded_for else request.META.get("REMOTE_ADDR")
 
 # -------------------
 # Public Views
@@ -271,110 +242,6 @@ def get_client_ip(request):
         ip = request.META.get("REMOTE_ADDR")
     return ip
 
-"""
-Old Configuration
-
-@login_required
-def dashboard_view(request):
-    user = request.user
-    client_ip = get_client_ip(request)
-    request_path = request.path
-    http_method = request.method
-    user_agent = request.META.get("HTTP_USER_AGENT", "unknown")
-
-    # Generate a unique correlation ID for this request
-    correlation_id = str(uuid.uuid4())
-
-    # Tenant memberships for this user
-    tenant_memberships = TenantUser.objects.filter(user=user).select_related("tenant")
-    tenants = [membership.tenant for membership in tenant_memberships]
-
-    # Default invoices/payments scoped to user's tenants
-    invoices = TenantInvoice.objects.filter(tenant__in=tenants).order_by("-issued_at")
-    payments = Payment.objects.filter(tenant__in=tenants).order_by("-created_at")
-    
-
-    # Role-based access enforcement
-    if user.role == "PlatformGlobalAdmin":
-        tenants = Tenant.objects.all()
-        invoices = TenantInvoice.objects.all().order_by("-created_at")
-        payments = Payment.objects.all().order_by("-created_at")
-
-        audit_logger.info(json.dumps({
-            "correlation_id": correlation_id,
-            "timestamp": str(timezone.now()),
-            "user": user.email,
-            "role": user.role,
-            "action": "access",
-            "scope": "ALL tenants, invoices, payments",
-            "ip": client_ip,
-            "path": request_path,
-            "method": http_method,
-            "user_agent": user_agent
-        }))
-
-    elif user.role == "PlatformAdmin":
-        tenants = Tenant.objects.all()
-        invoices = []   # explicitly deny invoice visibility
-        payments = []   # explicitly deny payment visibility
-
-        audit_logger.info(json.dumps({
-            "correlation_id": correlation_id,
-            "timestamp": str(timezone.now()),
-            "user": user.email,
-            "role": user.role,
-            "action": "access",
-            "scope": "tenant metadata only",
-            "restricted": ["invoices", "payments"],
-            "ip": client_ip,
-            "path": request_path,
-            "method": http_method,
-            "user_agent": user_agent
-        }))
-
-    elif user.role.startswith("Tenant"):
-        # Log per membership for clarity
-        for membership in tenant_memberships:
-            audit_logger.info(json.dumps({
-                "correlation_id": correlation_id,
-                "timestamp": str(timezone.now()),
-                "user": user.email,
-                "role": membership.role,
-                "action": "access",
-                "tenant": membership.tenant.name,
-                "scope": "invoices and payments (scoped)",
-                "ip": client_ip,
-                "path": request_path,
-                "method": http_method,
-                "user_agent": user_agent
-            }))
-
-    else:
-        messages.error(request, "You do not have access to the dashboard.")
-        security_logger.warning(json.dumps({
-            "correlation_id": correlation_id,
-            "timestamp": str(timezone.now()),
-            "user": user.email,
-            "role": user.role,
-            "action": "unauthorized_access",
-            "endpoint": request_path,
-            "ip": client_ip,
-            "method": http_method,
-            "user_agent": user_agent
-        }))
-        return redirect("login")
-
-    context = {
-        "user": user,
-        "memberships": tenant_memberships,
-        "tenants": tenants,
-        "invoices": invoices,
-        "payments": payments,
-        "correlation_id": correlation_id,  # optional: pass to template for debugging
-    }
-
-    return render(request, "core/dashboard.html", context)
-"""
 
 @login_required
 def dashboard_view(request):
@@ -476,18 +343,6 @@ def dashboard_view(request):
     }
 
     return render(request, "core/dashboard.html", context)
-
-
-# @login_required
-# def platform_dashboard_view(request):
-#     tenants = Tenant.objects.all()
-#     invoices = PlatformInvoice.objects.all().order_by("-created_at")
-#     context = {
-#         "user": request.user,
-#         "tenants": tenants,
-#         "invoices": invoices,
-#     }
-#     return render(request, "core/platform_dashboard.html", context)
 
 
 
