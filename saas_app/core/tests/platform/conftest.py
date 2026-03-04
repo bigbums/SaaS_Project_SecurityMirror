@@ -1,31 +1,27 @@
-# core/tests/platform/conftest.py
 import pytest
 from django.contrib.auth import get_user_model
-from saas_app.core.models import PlatformUser, PlatformInvoice
-from saas_app.core.tests.factories import UserFactory
+from rest_framework.test import APIClient
+from saas_app.core.models import Tenant, Tier, TenantUser, TenantCustomer
 
 User = get_user_model()
 
 @pytest.fixture
-def platform_test_user(db):
-    return User.objects.create_user(email="platformuser@example.com", password="pass123")
+def api_client():
+    return APIClient()
 
 @pytest.fixture
-def platform_user(db, platform_test_user):
-    return PlatformUser.objects.create(user=platform_test_user)
+def tenant_and_user(db):
+    custom_user = User.objects.create_user(email="tenantuser@example.com", password="pass123")
+    tier = Tier.objects.get(name="Standard")
+    tenant = Tenant.objects.create(email=custom_user.email, tier=tier)
+    tenant_user = TenantUser.objects.create(user=custom_user, tenant=tenant)
+    return tenant, tenant_user, custom_user
 
 @pytest.fixture
-def platform_invoice_paid(db):
-    return PlatformInvoice.objects.create(
-        status="paid",
-        amount=200,
-        currency="USD"
-    )
-
-@pytest.fixture
-def platform_invoice_unpaid(db):
-    return PlatformInvoice.objects.create(
-        status="unpaid",
-        amount=200,
-        currency="USD"
+def tenant_customer(db, tenant_and_user):
+    tenant, _, _ = tenant_and_user
+    return TenantCustomer.objects.create(
+        tenant=tenant,
+        name="Test Customer",
+        email="customer@example.com"
     )

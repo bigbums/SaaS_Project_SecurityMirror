@@ -8,17 +8,14 @@
     {{ form.non_field_errors }}
 
     {% for field in form %}
-  {% include "core/_form_field.html" with field=field %}
-  {% if field.name == "subscription_plan" %}
-    <small class="form-text text-muted">
-      Choose the plan that matches your business size. See <a href="{% url 'landing' %}">pricing details</a>.
-    </small>
-  {% endif %}
-{% endfor %}
-
-
-    {% for field in form %}
       {% include "core/_form_field.html" with field=field %}
+      {% if field.name == "company_name" %}
+        <small class="form-text text-muted">
+          Enter your company name. This will be used to create your tenant profile.
+        </small>
+      {% elif field.name == "tier_id" %}
+        {{ field }}  <!-- hidden input -->
+      {% endif %}
     {% endfor %}
 
     <button type="submit" class="btn btn-primary">Sign Up</button>

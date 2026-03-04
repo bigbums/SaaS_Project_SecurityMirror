@@ -13,6 +13,8 @@ from saas_app.core.viewsets import (
 )
 
 router = DefaultRouter()
+
+# Core viewsets
 router.register("users", UserViewSet, basename="user")
 router.register("tenants", TenantViewSet, basename="tenant")
 router.register("tenant-users", TenantUserViewSet, basename="tenantuser")
@@ -22,6 +24,8 @@ router.register("sale-items", SaleItemViewSet, basename="saleitem")
 router.register("tenant-customers", TenantCustomerViewSet, basename="tenantcustomer")
 router.register("tenant-invoices", TenantInvoiceViewSet, basename="tenantinvoice")
 router.register("tenant-payments", TenantPaymentViewSet, basename="tenantpayment")
+
+# Platform invoices — ✅ this line ensures /api/platform-invoices/{id}/mark_paid/ works
 router.register("platform-invoices", PlatformInvoiceViewSet, basename="platforminvoice")
 
 app_name = "v1"
