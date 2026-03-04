@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from saas_app.core.viewsets.viewsets import (
+from saas_app.core.viewsets import (
     UserViewSet,
     ItemViewSet,
     SaleViewSet,
