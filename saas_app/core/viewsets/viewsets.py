@@ -22,7 +22,7 @@ from saas_app.core.serializers import (
 
 from django.contrib.auth import get_user_model
 from rest_framework.decorators import action
-from audit.utils import log_invoice_action
+from saas_app.audit.utils import log_invoice_action
 
 from rest_framework import viewsets, status
 
@@ -172,14 +172,6 @@ class TenantCustomerViewSet(BaseTenantViewSet):
     serializer_class = TenantCustomerSerializer
 
 
-import uuid
-from django.utils import timezone
-from rest_framework import status, viewsets
-from rest_framework.response import Response
-from saas_app.core.models import Tenant, TenantCustomer, TenantUser, TenantInvoice
-from audit.utils import log_invoice_action
-from saas_app.core.permissions import TenantRequirePrivilegePermission
-from saas_app.core.serializers import TenantInvoiceSerializer
 
 class TenantInvoiceViewSet(viewsets.ModelViewSet):
     queryset = TenantInvoice.objects.all()
