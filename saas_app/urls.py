@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from accounts.views import signup
+from saas_app.accounts.views import signup
 from saas_app.api_urls import router
 from rest_framework.routers import DefaultRouter 
 from saas_app.core.viewsets.viewsets import PlatformInvoiceViewSet, TenantInvoiceViewSet
