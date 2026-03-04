@@ -1,7 +1,11 @@
-# core/utils/logging_helpers.py
 import json
 import logging
 from django.utils import timezone
+
+# Named loggers for different domains
+security_logger = logging.getLogger("security")
+invoice_logger = logging.getLogger("invoice")
+
 
 def log_json(logger: logging.Logger, level: str, entry: dict, request=None):
     """
@@ -25,29 +29,30 @@ def log_json(logger: logging.Logger, level: str, entry: dict, request=None):
 def log_invoice_action(invoice, action, performed_by=None, transaction_id=None, details=None):
     """
     Structured logger for invoice actions.
-    Automatically captures payment fields if present on the invoice.
+    Automatically captures key fields from the invoice.
     Adds refunded_at when invoice is refunded.
     """
     entry = {
         "event": "invoice_action",
-        "invoice_id": invoice.id,
+        "invoice_id": getattr(invoice, "id", None),
         "tenant_id": getattr(invoice, "tenant_id", None),
+        "tenant_name": getattr(invoice, "tenant_name", None),
         "action": action,
-        "performed_by": getattr(performed_by, "username", None),
-        "transaction_id": transaction_id,
-        "status": invoice.status,
+        "status": getattr(invoice, "status", None),
         "payment_method": getattr(invoice, "payment_method", None),
         "payment_reference": getattr(invoice, "payment_reference", None),
         "confirmed_by": getattr(invoice.confirmed_by, "username", None) if getattr(invoice, "confirmed_by", None) else None,
         "confirmed_at": invoice.confirmed_at.isoformat() if getattr(invoice, "confirmed_at", None) else None,
+        "performed_by": getattr(performed_by, "username", None),
+        "transaction_id": transaction_id,
     }
 
     # Add refunded_at if invoice is refunded
-    if invoice.status == "refunded" and hasattr(invoice, "refunded_at"):
+    if getattr(invoice, "status", None) == "refunded" and hasattr(invoice, "refunded_at"):
         entry["refunded_at"] = invoice.refunded_at.isoformat() if invoice.refunded_at else None
 
     # Merge any extra details passed in
     if details:
         entry.update(details)
 
-    log_json(logging.getLogger("invoice"), "info", entry)
+    log_json(invoice_logger, "info", entry)
