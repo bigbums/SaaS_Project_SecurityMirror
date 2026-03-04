@@ -2,9 +2,12 @@ name: Django CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - "**"        # run on all branches
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - "main"      # still run PRs into main
+
 
 jobs:
   # Main job: tenant + platform tests with coverage
