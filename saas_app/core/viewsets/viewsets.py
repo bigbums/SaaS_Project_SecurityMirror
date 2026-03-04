@@ -36,3 +36,16 @@ from saas_app.core.invoice_actions import (
     SendReminderSerializer,
 )
 from saas_app.core.utils.logging_helpers import log_invoice_action   # ✅ only this one
+
+__all__ = [
+    "UserViewSet",
+    "ItemViewSet",
+    "SaleViewSet",
+    "SaleItemViewSet",
+    "TenantCustomerViewSet",
+    "TenantInvoiceViewSet",
+    "TenantPaymentViewSet",
+    "TenantViewSet",
+    "TenantUserViewSet",
+    "PlatformInvoiceViewSet",
+]
