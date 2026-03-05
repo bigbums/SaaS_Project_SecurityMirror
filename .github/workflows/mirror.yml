@@ -1,11 +1,10 @@
-# Mirror workflow with secret debug
 name: Mirror to Public Security Repo
 
 on:
   push:
     branches:
-      - main   # only mirror main branch
-  workflow_dispatch:   # allows manual trigger
+      - main
+  workflow_dispatch:
 
 jobs:
   mirror:
@@ -13,10 +12,11 @@ jobs:
     steps:
       - name: Checkout private repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false   # <--- IMPORTANT, disables github-actions[bot]
 
       - name: Remove sensitive files before mirroring
         run: |
-          # List of files/folders to exclude from mirror
           EXCLUDES=(
             ".env"
             "config.json"
@@ -25,11 +25,11 @@ jobs:
             "*.pem"
             "*.key"
           )
-
           for file in "${EXCLUDES[@]}"; do
             git rm --cached -f $file || true
           done
-
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
           git commit -m "Strip sensitive files for mirror" || true
 
       - name: Debug secret length
@@ -46,7 +46,5 @@ jobs:
         env:
           TOKEN: ${{ secrets.MIRROR_TOKEN }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/bigbums/SaaS_Project_SecurityMirror.git
           git push origin main --force
