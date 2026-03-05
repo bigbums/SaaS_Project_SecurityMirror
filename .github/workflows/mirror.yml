@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main   # only mirror main branch
+  workflow_dispatch:   # allows manual trigger
 
 jobs:
   mirror:
@@ -11,6 +12,24 @@ jobs:
     steps:
       - name: Checkout private repo
         uses: actions/checkout@v4
+
+      - name: Remove sensitive files before mirroring
+        run: |
+          # List of files/folders to exclude from mirror
+          EXCLUDES=(
+            ".env"
+            "config.json"
+            "docker-compose.override.yml"
+            "secrets/*"
+            "*.pem"
+            "*.key"
+          )
+
+          for file in "${EXCLUDES[@]}"; do
+            git rm --cached -f $file || true
+          done
+
+          git commit -m "Strip sensitive files for mirror" || true
 
       - name: Push to public mirror
         run: |
