@@ -13,7 +13,8 @@ jobs:
       - name: Checkout private repo
         uses: actions/checkout@v4
         with:
-          persist-credentials: false   # <--- IMPORTANT, disables github-actions[bot]
+          persist-credentials: false
+          submodules: false   # skip broken submodule
 
       - name: Remove sensitive files before mirroring
         run: |
