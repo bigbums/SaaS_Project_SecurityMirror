@@ -1,3 +1,4 @@
+# Debug run to confirm secret
 name: Mirror to Public Security Repo
 
 on:
