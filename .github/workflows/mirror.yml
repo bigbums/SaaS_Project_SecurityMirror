@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-          submodules: false   # skip broken submodule
+          submodules: false
+          fetch-depth: 0
 
       - name: Remove sensitive files before mirroring
         run: |
