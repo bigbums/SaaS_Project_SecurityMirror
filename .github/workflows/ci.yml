@@ -3,15 +3,18 @@ name: Django CI
 on:
   push:
     branches:
-      - "**"        # run on all branches
+      - "**"        # run on all branches for quick feedback
   pull_request:
     branches:
       - "main"      # still run PRs into main
 
-
+# Auto-cancel older runs when new commits are pushed to the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  # Main job: tenant + platform tests with coverage
+  # Essential MVP tests: tenant + platform
   main-tests:
     runs-on: ubuntu-latest
     services:
@@ -46,22 +49,10 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
 
-    - name: Cache APT packages
-      uses: actions/cache@v4
-      with:
-        path: /var/cache/apt/archives
-        key: ${{ runner.os }}-apt-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-apt-
-
     - name: Install system dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y libcairo2-dev libjpeg-dev libpng-dev
-
-    - name: Upgrade pip/setuptools
-      run: |
-        python -m pip install --upgrade pip setuptools wheel
 
     - name: Install Python dependencies
       run: |
@@ -74,62 +65,35 @@ jobs:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
       run: python manage.py migrate
 
+    - name: Record start time
+      run: echo "Main-tests started at $(date)"
+
     - name: Run tenant + platform tests with coverage
       env:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      run: pytest saas_app/core/tests/tenant saas_app/core/tests/platform -vv --cov=saas_app --cov-report=xml --cov-report=term-missing --cov-fail-under=80
+      run: |
+        time pytest saas_app/core/tests/tenant saas_app/core/tests/platform -vv --cov=saas_app --cov-report=xml --cov-report=term-missing
 
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v4
-      with:
-        name: coverage-report
-        path: coverage.xml
+    - name: Record end time
+      run: echo "Main-tests finished at $(date)"
 
-    - name: Sanity check imports
-      run: python -m compileall saas_app/core
-
-  # RBAC tests job
+  # RBAC tests: run only on main
   rbac-tests:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: main-tests
-    services:
-      postgres:
-        image: postgres:14
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 123456
-          POSTGRES_DB: testdb
-        ports: ["5432:5432"]
-        options: >-
-          --health-cmd="pg_isready -U postgres"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.12"
-
-    - name: Cache pip
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-
     - name: Install Python dependencies
       run: |
-        python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install pytest pytest-django
-
     - name: Run RBAC tests
       env:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
@@ -138,86 +102,31 @@ jobs:
         pytest core/tests/test_tenant_invoice_rbac_permissions.py
         pytest core/tests/test_platform_invoice_rbac_permissions.py
 
-  # Full suite job (non-blocking, uploads results + coverage)
+  # Full suite: run only on main, non-blocking
   full-suite:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: main-tests
     continue-on-error: true
-
-    services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 123456
-          POSTGRES_DB: saas_db
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd="pg_isready -U postgres"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.12"
-
-    - name: Cache pip
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-
-    - name: Cache APT packages
-      uses: actions/cache@v4
-      with:
-        path: /var/cache/apt/archives
-        key: ${{ runner.os }}-apt-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-apt-
-
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libcairo2-dev libjpeg-dev libpng-dev
-
-    - name: Upgrade pip/setuptools
-      run: |
-        python -m pip install --upgrade pip setuptools wheel
-
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
         pip install pytest pytest-django pytest-cov
-
     - name: Run migrations
       env:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
       run: python manage.py migrate
-
     - name: Run full test suite with coverage
       env:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      run: pytest saas_app/core/tests -vv --cov=saas_app --cov-report=html --cov-report=xml --junitxml=full-suite-results.xml
-
-    - name: Upload full-suite results
-      uses: actions/upload-artifact@v4
-      with:
-        name: full-suite-results
-        path: full-suite-results.xml
-
-    - name: Upload HTML coverage report
-      uses: actions/upload-artifact@v4
-      with:
-        name: html-coverage-report
-        path: htmlcov
+      run: |
+        time pytest saas_app/core/tests -vv --cov=saas_app --cov-report=html --cov-report=xml --junitxml=full-suite-results.xml

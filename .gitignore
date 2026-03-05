@@ -75,3 +75,5 @@ platform_invoices/
 # Ignore Word documents
 *.docx
 ~$*.docx
+saas_app/reports/health_status.txt
+
