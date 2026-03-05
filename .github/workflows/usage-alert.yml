@@ -1,0 +1,46 @@
+name: Actions Usage Alert
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # runs daily at 9 AM UTC
+  workflow_dispatch:       # manual trigger if you want
+
+# Auto-cancel older runs when new commits are pushed to the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-usage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch usage
+        run: |
+          echo "Fetching usage..."
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github+json" \
+               https://api.github.com/repos/${{ github.repository }}/actions/usage > usage.json
+
+          used=$(jq '.billable.LINUX.minutes_used' usage.json)
+          limit=2000
+          threshold=$((limit * 70 / 100))
+
+          echo "Minutes used: $used / $limit"
+          if [ "$used" -ge "$threshold" ]; then
+            echo "⚠️ WARNING: You’ve crossed 70% of your monthly Actions minutes!" > alert.txt
+          else
+            echo "✅ Usage is below 70%." > alert.txt
+
+      - name: Send email alert
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.ALERT_EMAIL_USER }}
+          password: ${{ secrets.ALERT_EMAIL_PASS }}
+          subject: "GitHub Actions Usage Alert"
+          to: ${{ secrets.ALERT_EMAIL_TO }}
+          from: "GitHub Actions <${{ secrets.ALERT_EMAIL_USER }}>"
+          body: |
+            $(cat alert.txt)
