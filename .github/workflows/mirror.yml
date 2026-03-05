@@ -39,3 +39,12 @@ jobs:
           git config --global user.email "actions@github.com"
           git remote add mirror https://x-access-token:${TOKEN}@github.com/bigbums/SaaS_Project_SecurityMirror.git
           git push mirror main --force
+      - name: Debug secret length
+        env:
+          TOKEN: ${{ secrets.MIRROR_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "MIRROR_TOKEN is NOT set!"
+          else
+            echo "MIRROR_TOKEN length: ${#TOKEN}"
+          fi
